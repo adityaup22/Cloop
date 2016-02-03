@@ -128,7 +128,7 @@
        <!--Changed -->
        
        
-        <li><a href='#myModal' data-toggle='modal' data-backdrop='static'   style='padding-right:50px;'>Signup</a></li> 
+        <li><a href='#myModal' data-toggle='modal' data-backdrop='true'   style='padding-right:50px;'>Signup</a></li> 
       </ul>
     </div>
       <!---------------------------------      end of navbar collapse ------------------------>        
