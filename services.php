@@ -1,3 +1,7 @@
+<?php
+require_once("session.php");
+confirm_logged_in();
+ ?>
 <!doctype html>
 <html>
 <head>
@@ -24,7 +28,42 @@
         <li class="btn-primary" style="color:white; border-radius:6px;"><a href="#" style="color:white;">Home</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Notifications</a></li> 
-        <li><a href="#">Signout</a></li> 
+        
+        
+        	<?php
+			if(logged_in())
+			{
+			 echo "<li class='dropdown'>
+                    
+                    <a href='#' class='dropdown-toggle' data-toggle='dropdown'><i class='fa fa-user'></i>"; 
+                    ?> 
+                    
+                    <?php 
+                    
+                    if(isset($_SESSION['username']))echo ucfirst($_SESSION['username']); 
+                    
+                    echo "<b class='caret'></b></a>
+                    
+                    <ul class='dropdown-menu'>
+                        <li>
+                            <a href='#'><i class='fa fa-fw fa-user'></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href='#'><i class='fa fa-fw fa-envelope'></i> Inbox</a>
+                        </li>
+                        <li>
+                            <a href='#'><i class='fa fa-fw fa-gear'></i> Settings</a>
+                        </li>
+                        <li class='divider'></li>
+                        <li>
+                            <a href='logout.php'><i class='fa fa-fw fa-power-off'></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>";
+                }
+                ?>
+    
+        
       </ul>
     </div>
   </div>
@@ -117,15 +156,16 @@
       </div>
       <div class="modal-body">
         	<div class="container-fluid">
-  <form >
+  
+  <form action="http://127.0.0.1/cgi-bin/test1.py?user=<?php echo $_SESSION['username'] ?>" method="post">
         	<div class="form-group">
   <label for="sel1">Select One</label>
-  <select class="form-control" id="sel1">
-    <option value="1">xSmall </option>
-    <option value="2">Small</option>
-    <option value="3">Medium</option>
-    <option value="4">Large</option>
-    <option value="5">xLarge</option>
+  <select name="instance" class="form-control" id="sel1">
+    <option value="xsmall">xSmall </option>
+    <option value="small">Small</option>
+    <option value="medium">Medium</option>
+    <option value="large">Large</option>
+    <option value="xlarge">xLarge</option>
   </select>
 </div>
         <h2>Flavours</h2>      
@@ -172,7 +212,9 @@
     </tbody>
   </table>
 </div>
-<input type="submit" value="Submit" class="btn btn-primary btn-block">
+
+<input type="submit" name="submit" value="Submit" class="btn btn-primary btn-block">
+		
 		</form>
       </div>
      
