@@ -33,7 +33,7 @@
         <li><a href='#'>Services</a></li>
        
        
-       <!-- To Be Changed -->
+       <!--Changed -->
        <?php
        if(!logged_in())
        {
@@ -125,7 +125,7 @@
        
        
        
-       <!-- To Be Changed -->
+       <!--Changed -->
        
        
         <li><a href='#myModal' data-toggle='modal' data-backdrop='static'   style='padding-right:50px;'>Signup</a></li> 
