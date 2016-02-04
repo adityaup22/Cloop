@@ -1,0 +1,17 @@
+.header,h4{
+	background-color:#5cb85c;
+	color:white !important;
+	text-align:center;
+	font-size:20px;}
+.modal-header{
+	background-color:#5cb85c;
+	color:white !important;
+	text-align:center;
+	font-size:20px;}
+	
+.login-body{
+	padding:5px 5px;}
+	
+@media (min-width:768px){
+	.gd-container{
+		width:300px;}}
