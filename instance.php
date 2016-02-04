@@ -20,7 +20,7 @@ confirm_logged_in();
 </head>
 
 
-<body  onLoad="loadthis( '<?php if(isset($_SESSION['username']))echo ucfirst($_SESSION['username']); ?>')" >
+<body >
 <div id='wrapper'>
 <!--------------------              Top Navigation           ---------------------->
 	
@@ -199,6 +199,28 @@ confirm_logged_in();
                 
                 <div class="container-fluid " id="main">
                <table class="table table-bordered   table-hover table-responsive mytable" id="instancetable">
+               
+				    <?php 
+				   
+				  $query= "SELECT * FROM instance WHERE username='{$_SESSION['username']}' ";
+				$result=mysql_query($query,$connection);
+				while($user=mysql_fetch_array($result))
+					 {
+						
+						 $os=$user['os'];
+						 $ram=$user['ram'];
+						 $disk=$user['disk'];
+						echo "<tr>";
+						echo "<td>{$os}</td>";
+						echo "<td>{$ram}</td>";
+						echo "<td>{$disk}</td>";
+						echo "<td><a href=\"\"  class='btn-primary launch'>Launch Instance</a></td>";
+						echo "</tr>";
+						
+					 }
+					 
+					  ?>
+				  
                
                
                </table>

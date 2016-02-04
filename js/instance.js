@@ -86,7 +86,7 @@ function loadthis(user) {
       myFunction(xhttp);
     }
   };
-	xhttp.open("GET",username+".xml", true);//file managed by python dev
+	xhttp.open("GET","ajaxfiles/"+username+".xml", true);//file managed by python dev
 
   xhttp.send();
 }
