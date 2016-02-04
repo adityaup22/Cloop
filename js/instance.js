@@ -76,8 +76,8 @@ function loadthis() {
   xhttp.send();
 }*/
 
-function loadthis(user) {
-	var username = user;
+function loadthis() {
+	
   var xhttp = new XMLHttpRequest();
   
   xhttp.onreadystatechange = function() {
@@ -86,13 +86,15 @@ function loadthis(user) {
       myFunction(xhttp);
     }
   };
-	xhttp.open("GET","ajaxfiles/"+username+".xml", true);//file managed by python dev
+	xhttp.open("GET","/cgi-bin/proxy.py", true);//file managed by python dev
 
   xhttp.send();
 }
 
 //---------------------------- End of ajax function----------------//
 
+
+/*
 
 //-------------------------function to handle ajax xml response data------------//
 function myFunction(xml) {
@@ -127,6 +129,6 @@ function myFunction(xml) {
 }//------------------end of myFunction-------------//
  
  
- 
+ */
 
 

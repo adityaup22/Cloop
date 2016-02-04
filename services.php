@@ -26,7 +26,7 @@ confirm_logged_in();
     <div style="padding-left:900px;">
       <ul class="nav navbar-nav navbar-right">
         <li class="btn-primary" style="color:white; border-radius:6px;"><a href="#" style="color:white;">Home</a></li>
-        <li><a href="#">Services</a></li>
+        <li><a href="instance.php">Your Instances</a></li>
         <li><a href="#">Notifications</a></li> 
         
         

@@ -157,7 +157,7 @@ confirm_logged_in();
                         <a href='#'><i class='fa fa-fw fa-dashboard'></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href='#'><i class='fa fa-fw fa-desktop'></i> Instance</a>
+                        <a href='services.php'><i class='fa fa-fw fa-desktop'></i> Services</a>
                     </li>
                     <li>
                         <a href='#'><i class='fa fa-fw fa-bar-chart-o'></i> Stats</a>
@@ -189,7 +189,7 @@ confirm_logged_in();
                     <div class='col-lg-12'>
                        <h1 class="page-header" id="head">
                            Your Instances
-                       
+                       </h1>
                     </div>
                 </div>
                 <!-- /.row -->
@@ -201,12 +201,11 @@ confirm_logged_in();
                <table class="table table-bordered   table-hover table-responsive mytable" id="instancetable">
                
 				    <?php 
-				   
+				   // If  INstance Available then,,
 				  $query= "SELECT * FROM instance WHERE username='{$_SESSION['username']}' ";
 				$result=mysql_query($query,$connection);
 				while($user=mysql_fetch_array($result))
 					 {
-						
 						 $os=$user['os'];
 						 $ram=$user['ram'];
 						 $disk=$user['disk'];
@@ -214,11 +213,14 @@ confirm_logged_in();
 						echo "<td>{$os}</td>";
 						echo "<td>{$ram}</td>";
 						echo "<td>{$disk}</td>";
-						echo "<td><a href=\"\"  class='btn-primary launch'>Launch Instance</a></td>";
+						echo "<td><a href=\"/cgi-bin/proxy.py\"  class='btn-primary launch'>Launch Instance</a></td>";
 						echo "</tr>";
 						
 					 }
-					 
+					 // If No INstance Available then,,
+					 if(!isset($os))
+						echo "<h1 class=\"page-header\" id=\"head\">No Instances Available. </h1>";
+		
 					  ?>
 				  
                
