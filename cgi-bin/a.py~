@@ -1,0 +1,13 @@
+#!/usr/bin/python2
+
+import cgi
+
+print "content-type: text/html"
+print 
+ 
+d=cgi.FormContent()
+print  d['b'][0]
+
+
+
+
