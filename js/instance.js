@@ -86,12 +86,8 @@ function loadthis(user) {
       myFunction(xhttp);
     }
   };
-<<<<<<< HEAD
-  
-  xhttp.open("GET", "launch_instance_page.xml", true);//file managed by python dev
-=======
-  xhttp.open("GET", "ajaxfiles/"+username+"instances.xml", true);//file managed by python dev
->>>>>>> 23d320a20b5f8b47f841e7c263036aa2e7bd65b9
+	xhttp.open("GET",username+".xml", true);//file managed by python dev
+
   xhttp.send();
 }
 

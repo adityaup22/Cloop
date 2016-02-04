@@ -19,14 +19,8 @@ confirm_logged_in();
 
 </head>
 
-<<<<<<< HEAD
 
-<body onload="loadthis()">
-
-
-=======
 <body  onLoad="loadthis( '<?php if(isset($_SESSION['username']))echo ucfirst($_SESSION['username']); ?>')" >
->>>>>>> 23d320a20b5f8b47f841e7c263036aa2e7bd65b9
 <div id='wrapper'>
 <!--------------------              Top Navigation           ---------------------->
 	
