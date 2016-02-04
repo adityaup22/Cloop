@@ -108,13 +108,13 @@ function myFunction(xml) {
   var table="<tr><th>Title</th><th>IP Address</th><th>Size</th><th>Status</th><th></th></tr>";
   
   for (i = 0; i <os.length; i++) { 
-    table += "<tr><td ><a href='www.google.com'>" +
+    table += "<tr><td >" +
     os[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
     "</td></a><td>" +
     os[i].getElementsByTagName("IP")[0].childNodes[0].nodeValue + "</td><td>" +
 	os[i].getElementsByTagName("SIZE")[0].childNodes[0].nodeValue +"</td><td>" +
 	 os[i].getElementsByTagName("STATUS")[0].childNodes[0].nodeValue +
-	 "</td><td><a href='"+os[i].getElementsByTagName("SOURCE")[0].childNodes[0].nodeValue +"' target='_blank' class='btn-danger launch'>Launch Instance</a></td></tr>";// source of the instance is set by python script in the file...
+	 "</td><td><a href='"+os[i].getElementsByTagName("SOURCE")[0].childNodes[0].nodeValue +"' target='_blank' class='btn-primary launch'>Launch Instance</a></td></tr>";// source of the instance is set by python script in the file...
 	
   		}//end of for loop
   document.getElementById("instancetable").innerHTML = table;
