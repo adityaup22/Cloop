@@ -157,7 +157,7 @@ confirm_logged_in();
       <div class="modal-body">
         	<div class="container-fluid">
   
-  <form action="http://127.0.0.1/cgi-bin/test1.py?user=<?php echo $_SESSION['username'] ?>" method="post">
+  <form action="/cgi-bin/test1.py?user=<?php echo $_SESSION['username'] ?>" method="post">
         	<div class="form-group">
   <label for="sel1">Select One</label>
   <select name="instance" class="form-control" id="sel1">

@@ -5,7 +5,7 @@ confirm_logged_in();
 
 <!doctype html>
 <html>
-<head>
+<head  >
 <meta charset='utf-8'>
 <meta name='viewport'  content='width=device-width,initial-scale=1'>
 <title>Instance</title>
@@ -19,7 +19,11 @@ confirm_logged_in();
 
 </head>
 
+<<<<<<< HEAD
 <body onload="loadthis()">
+=======
+<body  onLoad="loadthis()" >
+>>>>>>> 92c66156b84c0c7bfd825740ec2ddece64951383
 <div id='wrapper'>
 <!--------------------              Top Navigation           ---------------------->
 	
@@ -186,17 +190,24 @@ confirm_logged_in();
                 <!-- Page Heading -->
                 <div class='row'>
                     <div class='col-lg-12'>
-                       
+                       <h1 class="page-header" id="head">
+                           Your Instances
                        
                     </div>
                 </div>
                 <!-- /.row -->
+                
+               <!-- <iframe src="http://192.168.1.2/vnc/vnc_auto.html?host=192.168.1.2&port=7164" id="frame" >
+                	
+                </iframe> -->
+                
+                
                 <div class="container-fluid " id="main">
                <table class="table table-bordered   table-hover table-responsive mytable" id="instancetable">
                
                
                </table>
-                </div>
+                </div>  
 
             </div>
             <!-- /.container-fluid -->

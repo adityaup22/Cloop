@@ -81,12 +81,12 @@ function loadthis() {
   alert("ok");
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
-      alert("2");
+     alert("2");
       myFunction(xhttp);
     }
   };
   
-  xhttp.open("GET", "ajaxfiles/instances.xml", true);//file managed by python dev
+  xhttp.open("GET", "launch_instance_page.xml", true);//file managed by python dev
   xhttp.send();
 }
 
@@ -113,7 +113,7 @@ function myFunction(xml) {
   for (i = 0; i <os.length; i++) { 
     table += "<tr><td >" +
     os[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
-    "</td></a><td>" +
+    "</td><td>" +
     os[i].getElementsByTagName("IP")[0].childNodes[0].nodeValue + "</td><td>" +
 	os[i].getElementsByTagName("SIZE")[0].childNodes[0].nodeValue +"</td><td>" +
 	 os[i].getElementsByTagName("STATUS")[0].childNodes[0].nodeValue +
