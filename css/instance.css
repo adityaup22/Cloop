@@ -1,2 +1,15 @@
 .my-toggle{
 	float:left;}
+	
+
+	
+th{
+	background-color:#f5f5f5}
+	
+.launch{
+	padding:7px;
+	border-radius:3px;
+	text-decoration:none;}
+.launch:hover{
+	text-decoration:none;}
+	
