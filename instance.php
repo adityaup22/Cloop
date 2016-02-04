@@ -19,10 +19,14 @@ confirm_logged_in();
 
 </head>
 
+<<<<<<< HEAD
 
 <body onload="loadthis()">
 
 
+=======
+<body  onLoad="loadthis( '<?php if(isset($_SESSION['username']))echo ucfirst($_SESSION['username']); ?>')" >
+>>>>>>> 23d320a20b5f8b47f841e7c263036aa2e7bd65b9
 <div id='wrapper'>
 <!--------------------              Top Navigation           ---------------------->
 	
@@ -196,9 +200,7 @@ confirm_logged_in();
                 </div>
                 <!-- /.row -->
                 
-               <!-- <iframe src="http://192.168.1.2/vnc/vnc_auto.html?host=192.168.1.2&port=7164" id="frame" >
-                	
-                </iframe> -->
+               
                 
                 
                 <div class="container-fluid " id="main">
