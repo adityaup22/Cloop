@@ -1,0 +1,41 @@
+
+
+h1{
+	color:#FFFBF0;
+	font-family: 'Ubuntu', sans-serif;
+	font-size:70px;
+	font-weight:bolder;
+	}
+
+
+#main{
+	position:absolute;
+	top:2%;
+	left:5%;
+	
+	background-color:white;
+	border-bottom-right-radius:8px;
+	border-top-left-radius:8px;
+	border:none;
+	z-index:1000;
+	}
+	
+h2{
+	color:#2A3F55;
+	font-weight:lighter;}
+	
+#new{
+	
+	position:fixed;
+	top:0%;
+	background:none;
+	border:none;}
+.back-vid{
+	position:absolute;
+	top:0%;
+	left:0%;
+	height:100%;
+	width:100%;
+	background:none;
+	z-index:1;
+	}
