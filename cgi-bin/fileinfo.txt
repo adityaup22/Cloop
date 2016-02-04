@@ -1,0 +1,5 @@
+Found 4 items
+-rw-r--r--   3 root supergroup   10485760 2015-08-07 15:10 /aa
+-rw-r--r--   3 root supergroup          0 2015-08-07 14:07 /aa.txt
+drwxr-xr-x   - root supergroup          0 2015-08-07 13:39 /tmp
+drwxr-xr-x   - root supergroup          0 2015-08-07 14:12 /user
