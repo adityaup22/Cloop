@@ -192,12 +192,18 @@ confirm_logged_in();
                     </div>
                 </div>
                 <!-- /.row -->
+                
+               <!-- <iframe src="http://192.168.1.2/vnc/vnc_auto.html?host=192.168.1.2&port=7164" id="frame" >
+                	
+                </iframe> -->
+                
+                
                 <div class="container-fluid " id="main">
                <table class="table table-bordered   table-hover table-responsive mytable" id="instancetable">
                
                
                </table>
-                </div>
+                </div>  
 
             </div>
             <!-- /.container-fluid -->
