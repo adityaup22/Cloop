@@ -78,10 +78,10 @@ function loadthis() {
 
 function loadthis() {
   var xhttp = new XMLHttpRequest();
-  alert("ok");
+  
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
-     alert("2");
+     
       myFunction(xhttp);
     }
   };

@@ -19,11 +19,10 @@ confirm_logged_in();
 
 </head>
 
-<<<<<<< HEAD
+
 <body onload="loadthis()">
-=======
-<body  onLoad="loadthis()" >
->>>>>>> 92c66156b84c0c7bfd825740ec2ddece64951383
+
+
 <div id='wrapper'>
 <!--------------------              Top Navigation           ---------------------->
 	

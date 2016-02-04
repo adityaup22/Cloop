@@ -168,12 +168,12 @@ confirm_logged_in();
     <option value="xlarge">xLarge</option>
   </select>
    <br/>
-  <label for="sel2">Select OS</label>
-  <select class="form-control" id="sel2">
-    <option value="11">CentOS </option>
-    <option value="22">Mint</option>
-    <option value="33">Ubuntu</option>
-    <option value="44">Fedora</option>
+  <label  for="sel2">Select OS</label>
+  <select name="os" class="form-control" id="sel2">
+    <option value="Centos">CentOS </option>
+    <option value="Mint">Mint</option>
+    <option value="Ubuntu">Ubuntu</option>
+    <option value="Fedora">Fedora</option>
     
   </select>
 </div>
