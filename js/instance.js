@@ -78,11 +78,14 @@ function loadthis() {
 
 function loadthis() {
   var xhttp = new XMLHttpRequest();
+  alert("ok");
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
+      alert("2");
       myFunction(xhttp);
     }
   };
+  
   xhttp.open("GET", "ajaxfiles/instances.xml", true);//file managed by python dev
   xhttp.send();
 }

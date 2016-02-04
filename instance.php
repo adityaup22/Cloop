@@ -19,7 +19,7 @@ confirm_logged_in();
 
 </head>
 
-<body>
+<body onload="loadthis()">
 <div id='wrapper'>
 <!--------------------              Top Navigation           ---------------------->
 	
