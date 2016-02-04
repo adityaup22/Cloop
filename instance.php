@@ -5,7 +5,7 @@ confirm_logged_in();
 
 <!doctype html>
 <html>
-<head>
+<head  >
 <meta charset='utf-8'>
 <meta name='viewport'  content='width=device-width,initial-scale=1'>
 <title>Instance</title>
@@ -19,7 +19,7 @@ confirm_logged_in();
 
 </head>
 
-<body>
+<body  onLoad="loadthis()" >
 <div id='wrapper'>
 <!--------------------              Top Navigation           ---------------------->
 	
@@ -186,7 +186,8 @@ confirm_logged_in();
                 <!-- Page Heading -->
                 <div class='row'>
                     <div class='col-lg-12'>
-                       
+                       <h1 class="page-header" id="head">
+                           Your Instances
                        
                     </div>
                 </div>
