@@ -186,17 +186,17 @@ confirm_logged_in();
                 <!-- Page Heading -->
                 <div class='row'>
                     <div class='col-lg-12'>
-                       <iframe class='col-lg-12' 
-                       src='http://127.0.0.1/vnc/vnc_auto.html?host=127.0.0.1&port=<?php 
-                       $query= "SELECT proxy_port FROM user_port WHERE username=\"{$_SESSION['username']}\" LIMIT 1";
-					   $result=mysql_query($query,$connection);
-					   $port=mysql_fetch_array($result); 
-					   echo $port['proxy_port'];
-					  ?>></iframe>
+                       
                        
                     </div>
                 </div>
                 <!-- /.row -->
+                <div class="container-fluid " id="main">
+               <table class="table table-bordered   table-hover table-responsive mytable" id="instancetable">
+               
+               
+               </table>
+                </div>
 
             </div>
             <!-- /.container-fluid -->
