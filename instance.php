@@ -187,7 +187,7 @@ confirm_logged_in();
                 <!-- Page Heading -->
                 <div class='row'>
                     <div class='col-lg-12'>
-                       <h1 class="page-header" id="head">
+                       <h2 class="page-header" id="head">
                            Your Instances
                        </h1>
                     </div>
@@ -196,7 +196,7 @@ confirm_logged_in();
                 
                
                 
-                
+                <!--------------------------------------------- table for instance---------------------------> 
                 <div class="container-fluid " id="main">
                <table class="table table-bordered   table-hover table-responsive mytable" id="instancetable">
                
@@ -226,7 +226,8 @@ confirm_logged_in();
                
                
                </table>
-                </div>  
+                </div> 
+                <!----------------------------------- /.table---------------------> 
 
             </div>
             <!-- /.container-fluid -->
