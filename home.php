@@ -30,7 +30,7 @@
                
       <ul class='nav navbar-nav navbar-right'>
         <li class='btn-primary' style='color:white; border-radius:6px;'><a href='#' style='color:white;'>Home</a></li>
-        <li><a href='#'>Services</a></li>
+        <li><a href='services.php'>Services</a></li>
        
        
        <!--Changed -->
