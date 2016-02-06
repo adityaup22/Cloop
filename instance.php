@@ -187,7 +187,7 @@ confirm_logged_in();
                 <!-- Page Heading -->
                 <div class='row'>
                     <div class='col-lg-12'>
-                       <h1 class="page-header" id="head">
+                       <h2 class="page-header" id="head">
                            Your Instances
                        </h1>
                     </div>
@@ -196,12 +196,57 @@ confirm_logged_in();
                 
                
                 
-                
+                <!--------------------------------------------- table for instance---------------------------> 
                 <div class="container-fluid " id="main">
+                
+                <form id="iform"  role="form" method="post" action=""></form>
+                
+                <button type="submit" class="btn-primary btn " form="iform">Launch Instance</button>
+               <button type="submit" class="btn-danger btn" form="iform" >Terminate Instance</button><br/>
+               
+               
                <table class="table table-bordered   table-hover table-responsive mytable" id="instancetable">
                
+               
+               <br>
+               <th></th>
+               <th>Name</th>
+               <th>IP Address</th>
+               <th>Ram</th>
+               <th>Disk</th>
+               <th>Status</th>
+               
+               <tr>
+               	<td><input type="checkbox" form="iform" value="1"></td>
+               	<td>Ubuntu 15.0 </td>
+                <td>10.0.0.1</td>
+                <td>2 GB</td>
+                <td>1 TB</td>
+                <td>Active</td>
+               </tr>
+               
+               <tr>
+               	<td><input type="checkbox" form="iform" value="2"></td>
+               	<td>Red Hat 7 </td>
+                <td>10.0.0.1</td>
+                <td>2 GB</td>
+                <td>1 TB</td>
+                <td>Active</td>
+               </tr>
+               <tr>
+               	<td><input type="checkbox" form="iform" value="3"></td>
+               	<td>Centos 7 </td>
+                <td>10.0.0.1</td>
+                <td>2 GB</td>
+                <td>1 TB</td>
+                <td>Active</td>
+               </tr>
+               
+               
+               
+               <!--
 				    <?php 
-				   // If  INstance Available then,,
+				/*   // If  INstance Available then,,
 				  $query= "SELECT * FROM instance WHERE username='{$_SESSION['username']}' ";
 				$result=mysql_query($query,$connection);
 				while($user=mysql_fetch_array($result))
@@ -221,12 +266,13 @@ confirm_logged_in();
 					 if(!isset($os))
 						echo "<h1 class=\"page-header\" id=\"head\">No Instances Available. </h1>";
 		
-					  ?>
+					 */ ?>
 				  
-               
+               -->
                
                </table>
-                </div>  
+                </div> 
+                <!----------------------------------- /.table---------------------> 
 
             </div>
             <!-- /.container-fluid -->

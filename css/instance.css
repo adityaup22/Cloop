@@ -4,7 +4,13 @@
 
 	
 th{
-	background-color:#f5f5f5}
+	background-color:#f5f5f5;
+	text-align:center;}
+td{
+	text-align:center;}
+	
+btn{
+	padding-left:10px;}
 	
 .launch{
 	padding:7px;
