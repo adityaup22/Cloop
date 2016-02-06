@@ -231,7 +231,11 @@ confirm_logged_in();
                 <td>10.0.0.1</td>
                 <td>2 GB</td>
                 <td>1 TB</td>
-                <td>Active</td>
+                <td><div class="progress">
+  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
+  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+    80% Building
+  </div></td>     <!--this progress bar can be displayed when instance is building and its progress can be varied by changing its "width" so it must be managed by the script and continuously script must be triggred to check the progress and width must be adjusted... --->
                </tr>
                <tr>
                	<td><input type="checkbox" form="iform" value="3"></td>
