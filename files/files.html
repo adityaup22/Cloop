@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="refresh" content="5">
+<title></title>
+<script src="files.js"></script>
+<script src="http://www.w3schools.com/appml/2.0.3/appml.js"></script>
+
+<script src="files.js"></script>
+<link rel="stylesheet" href="bootstrap.css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="sb-admin.css" />
+<style>
+#fileupload{
+	position:absolute;
+	width:25%;
+	top:7%;
+	height:20%;
+	right:5%;}
+input{
+	position:absolute;
+	top:30%;
+	width:70%;
+	height:50%;
+}
+</style>
+
+</head>
+<body onload="files()">
+<h1 style="text-align:center;" >Files</h1>
+
+<!------------------- new file--------------------->
+
+<div id="fileupload">
+<form>
+<span style="font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif; color:#559FFF; font-size:large;">Upload File</span>	<input type="file" value="files" name="files" /></form>
+</div>
+
+
+<hr/>
+<div class="container" appml-data="nn">
+<table class="table table-striped table-bordered">
+<tr>
+  <th>Permissions</th>
+  <th>Replication</th>
+  <th>UploadedBy</th>
+  <th>UserGroup</th>
+  <th>Size</th>
+  <th>UploadedOn</th>
+  <th>FName</th>
+  
+</tr>
+<tr appml-repeat="details" >
+  <td>{{Permissions}}</td>
+  <td>{{Replication}}</td>
+  <td>{{UploadedBy}}</td>
+  <td>{{UserGroup}}</td>
+  <td>{{Size}}</td>
+  <td>{{UploadedOn}}</td>
+  <td>{{FName}}</td>
+  
+</tr>
+</table>	
+</div>
+
+
+
+<script src="bootstrap.min.js"></script>
+</body>
+</html>
