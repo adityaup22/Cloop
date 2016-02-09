@@ -187,6 +187,15 @@
 </div>
 
 <!--------------------------------------      End of modal     ----------------------------->
-                
+    
+    <?php
+	if(logged_in())
+			{
+			echo"<div class='alert alert-success fade in' id='msg'>
+    <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+    <strong>Welcome!</strong></div>";}
+  
+			
+           ?>     
 </body>
 </html>
