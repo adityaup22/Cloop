@@ -12,9 +12,15 @@
 <script src='js/jquery.js' ></script>
 <script src='js/bootstrap.js'></script>
 <script src='js/home.js'></script>
+<script src='js/instance.js'></script>
 </head>
 
 <body>
+	
+           <div class="alert alert-success fade in" id="msg">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Welcome!</strong>  <?php if(isset($_SESSION['username']))echo ucfirst($_SESSION['username']); ?>
+  </div>
  <nav class='navbar navbar-inverse navbar-fixed-top' role='navigation'>
             <!--          Brand and toggle get grouped for better mobile display          -->
             <div class='navbar-header'>

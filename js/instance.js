@@ -94,6 +94,9 @@ function loadthis() {
   xhttp.send();
 }
 
+
+
+
 //---------------------------- End of ajax function----------------//
 
 

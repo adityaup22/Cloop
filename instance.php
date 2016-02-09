@@ -186,7 +186,10 @@ confirm_logged_in();
            
            <!----- alert msg for user-----> <div class="alert alert-success fade in" id="msg">
     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-    <strong>Welcome!</strong>  <?php if(isset($_SESSION['username']))echo ucfirst($_SESSION['username']); ?>
+      <?php 
+      $count=0;
+      if($count==0){
+      if(isset($_GET['nothing_selected']))echo "<strong>Please Select Any Instance PAL ..!!</strong>";$count++;} ?>
   </div>
 
                 <!-- Page Heading -->
@@ -204,10 +207,10 @@ confirm_logged_in();
                 <!--------------------------------------------- table for instance---------------------------> 
                 <div class="container-fluid " id="main">
                 
-                <form id="iform"  role="form" method="post" action=""></form>
+                <form id="iform"  role="form" method="post" action="/cgi-bin/proxy.py?user=<?php echo "{$_SESSION['username']}"; ?>"></form>
                 
                 <button type="submit" class="btn-primary btn " form="iform">Launch Instance</button>
-               <button type="submit" class="btn-danger btn" form="iform" >Terminate Instance</button><br/>
+               <button type="submit" name="terminate" class="btn-danger btn" form="iform2" >Terminate Instance</button><br/>
                
                
                <table class="table table-bordered   table-hover table-responsive mytable" id="instancetable">
@@ -220,35 +223,31 @@ confirm_logged_in();
                <th>Ram</th>
                <th>Disk</th>
                <th>Status</th>
+               <?php
+               $url=urlencode($_SESSION['username']);               
+               $query= "SELECT * FROM instance WHERE username='{$_SESSION['username']}' ";
+				$result=mysql_query($query,$connection);
+				while($user=mysql_fetch_array($result))
+					 {
+                $id=$user['id'];
+                $os=$user['os'];
+				$ram=$user['ram'];
+				$disk=$user['disk'];
+                
+                echo "<tr>";
                
-               <tr>
-               	<td><input type="checkbox" form="iform" value="1"></td>
-               	<td>Ubuntu 15.0 </td>
-                <td>10.0.0.1</td>
-                <td>2 GB</td>
-                <td>1 TB</td>
-                <td>Active</td>
-               </tr>
-               
-               <tr>
-               	<td><input type="checkbox" form="iform" value="2"></td>
-               	<td>Red Hat 7 </td>
-                <td>10.0.0.1</td>
-                <td>2 GB</td>
-                <td>1 TB</td>
+               	echo "<td><input type=\"checkbox\" name=\"os_name\" form=\"iform\" value=\"{$os}\"></td>";
+               	echo "<td> {$os}</td>";
+                echo "<td></td>";
+                echo "<td>{$ram}</td>";
+                echo "<td>{$disk}</td>";
+			}
+                ?>
                 <td><div class="progress">
   <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
   aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
     80% Building
   </div></td>     <!--this progress bar can be displayed when instance is building and its progress can be varied by changing its "width" so it must be managed by the script and continuously script must be triggred to check the progress and width must be adjusted... --->
-               </tr>
-               <tr>
-               	<td><input type="checkbox" form="iform" value="3"></td>
-               	<td>Centos 7 </td>
-                <td>10.0.0.1</td>
-                <td>2 GB</td>
-                <td>1 TB</td>
-                <td>Active</td>
                </tr>
                
                
