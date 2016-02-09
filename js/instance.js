@@ -2,7 +2,7 @@
 $ (function(){
 	
 	
-	$('#msg').fadeOut(4000);})
+	$('#msg').fadeOut(4000,"swing");})
 	//--------------------------Javascript code---------------------
 
 /*this is a ajax code which brings the instances available for user*/
