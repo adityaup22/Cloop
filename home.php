@@ -17,12 +17,12 @@
 
 <body>
 	
-
+<!------ alert msg------------->
    <div class=" alert alert-success myclass"  id="msg">
     
     <strong>Welcome!</strong>
 </div>
-         
+<!--------------------->         
 
  <nav class='navbar navbar-inverse navbar-fixed-top' role='navigation'>
             <!--          Brand and toggle get grouped for better mobile display          -->
