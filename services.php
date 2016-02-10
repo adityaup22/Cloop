@@ -194,9 +194,15 @@ confirm_logged_in();
   <br/>
   
   <label for="os_name">Name</label>
+<<<<<<< HEAD
   
   <input type="text" class="form-control" placeholder="Enter Name for your OS" id="os_name">
 </div>
+=======
+
+  
+  <input type="text" placeholder="Enter the name for the OS" class="form-control" name="name" />
+>>>>>>> 2e8af05e2cf6dc14234d8e9a03d445f148ed1562
         <h2>Flavours</h2>      
   <table class="table table-hover">
     <thead>
