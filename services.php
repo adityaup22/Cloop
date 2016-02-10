@@ -68,7 +68,12 @@ confirm_logged_in();
     </div>
   </div>
 </nav>
+<!------------------------------------navigation over------------------------------->
 
+<!----- alert msg for user-----> <div class="alert alert-success fade in" id="msg">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Welcome!</strong>
+    </div>
 
 <button  class="click" id="one" data-toggle="modal" data-target="#myModal2">Softwares</button>
 
@@ -176,6 +181,10 @@ confirm_logged_in();
     <option value="Fedora">Fedora</option>
     
   </select>
+  <br/>
+  
+  <label for="os_name">Name</label>
+  <input type="text" class="form-control" id="os_name">
 </div>
         <h2>Flavours</h2>      
   <table class="table table-hover">

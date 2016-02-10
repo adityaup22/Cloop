@@ -9,8 +9,10 @@ th{
 td{
 	text-align:center;}
 	
-btn{
-	padding-left:10px;}
+.btn{
+	margin-left:10px;
+	float:left;}
+
 	
 .launch{
 	padding:7px;

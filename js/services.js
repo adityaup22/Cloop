@@ -1,7 +1,4 @@
-$(function(){
-	$('h1').hide();
-	$('h1').slideDown('slow',function(){
-		
-		});
+$ (function(){
 	
-	});
+	
+	$('#msg').fadeOut(4000,"swing");})

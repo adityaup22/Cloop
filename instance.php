@@ -210,6 +210,9 @@ confirm_logged_in();
                 <form id="iform"  role="form" method="post" action="/cgi-bin/proxy.py?user=<?php echo "{$_SESSION['username']}"; ?>"></form>
                 
                 <button type="submit" class="btn-primary btn " form="iform">Launch Instance</button>
+				
+				
+                
                <button type="submit" name="terminate" class="btn-danger btn" form="iform2" >Terminate Instance</button><br/>
                
                
