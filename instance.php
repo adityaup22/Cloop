@@ -183,6 +183,11 @@ confirm_logged_in();
 <div id='page-wrapper'>
 
             <div class='container-fluid'>
+            <!----- alert msg for user----->
+<div class=" alert alert-success myclass"  id="msg">
+    
+    <strong>Welcome!</strong>
+</div>
            
            <!----- alert msg for user-----> <div class="alert alert-success fade in" id="msg">
     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>

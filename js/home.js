@@ -1,4 +1,10 @@
-/*$ (function(){
+$ (function(){
+	var x = $("#msg");
+	x.hide();
 	
+	x.fadeIn("fast","swing");
+	x.animate({top:'8%'},"slow");
 	
-	$('#msg').fadeOut(4000,"swing");})*/
+	x.fadeOut(2000,"swing");
+	x.animate({top:'0%'},"slow");	
+})

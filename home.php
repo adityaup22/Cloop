@@ -17,10 +17,11 @@
 
 <body>
 	
-           <div class="alert alert-success fade in" id="msg">
-    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-    <strong>Welcome!</strong>  <?php if(isset($_SESSION['username']))echo ucfirst($_SESSION['username']); ?>
-  </div>
+   <div class=" alert alert-success myclass"  id="msg">
+    
+    <strong>Welcome!</strong>
+</div>
+         
  <nav class='navbar navbar-inverse navbar-fixed-top' role='navigation'>
             <!--          Brand and toggle get grouped for better mobile display          -->
             <div class='navbar-header'>
@@ -188,14 +189,9 @@
 
 <!--------------------------------------      End of modal     ----------------------------->
     
-    <?php
-	if(logged_in())
-			{
-			echo"<div class='alert alert-success fade in' id='msg'>
-    <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-    <strong>Welcome!</strong></div>";}
-  
+  <!----- alert msg for user----->
+
 			
-           ?>     
+              
 </body>
 </html>
