@@ -15,3 +15,14 @@
 @media (min-width:768px){
 	.gd-container{
 		width:300px;}}
+		
+.myclass{
+	z-index:10000;
+	position:absolute;
+	top:0%;
+	
+	width:20%;
+	
+	left:40%;
+	
+	}

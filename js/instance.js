@@ -1,8 +1,14 @@
 
 $ (function(){
+	var x = $("#msg");
+	x.hide();
 	
+	x.fadeIn("slow","swing");
+	x.animate({top:'8%'},"slow");
 	
-	$('#msg').fadeOut(4000,"swing");})
+	x.fadeOut(2000,"swing");
+	x.animate({top:'0%'},"slow");	
+})
 	//--------------------------Javascript code---------------------
 
 /*this is a ajax code which brings the instances available for user*/

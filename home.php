@@ -17,10 +17,18 @@
 
 <body>
 	
+<<<<<<< HEAD
            <div class="alert alert-success fade in" id="msg">
     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
     <strong>Welcome!</strong>   
   </div>
+=======
+   <div class=" alert alert-success myclass"  id="msg">
+    
+    <strong>Welcome!</strong>
+</div>
+         
+>>>>>>> 54c050bf0287997511369755975d5fe22df9b0be
  <nav class='navbar navbar-inverse navbar-fixed-top' role='navigation'>
             <!--          Brand and toggle get grouped for better mobile display          -->
             <div class='navbar-header'>
@@ -188,6 +196,7 @@
 
 <!--------------------------------------      End of modal     ----------------------------->
     
+<<<<<<< HEAD
     <?php
 	if(isset($_SESSION['not']))
 			{
@@ -219,7 +228,11 @@
     }
   
   
+=======
+  <!----- alert msg for user----->
+
+>>>>>>> 54c050bf0287997511369755975d5fe22df9b0be
 			
-           ?>     
+              
 </body>
 </html>

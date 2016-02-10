@@ -13,7 +13,16 @@ td{
 	margin-left:10px;
 	float:left;}
 
+.myclass{
 	
+	position:absolute;
+	top:0%;
+	
+	width:20%;
+	
+	left:40%;
+	
+	}	
 .launch{
 	padding:7px;
 	border-radius:3px;

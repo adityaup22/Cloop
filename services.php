@@ -70,6 +70,7 @@ confirm_logged_in();
 </nav>
 <!------------------------------------navigation over------------------------------->
 
+<<<<<<< HEAD
 <!----- alert msg for user----->
 
 	<?php
@@ -82,6 +83,16 @@ confirm_logged_in();
     </div>";
 	}
 	?>
+=======
+
+<!----- alert msg for user----->
+<div class=" alert alert-success myclass"  id="msg">
+    
+    <strong>Welcome!</strong>
+</div>
+
+
+>>>>>>> 54c050bf0287997511369755975d5fe22df9b0be
 
 <button  class="click" id="one" data-toggle="modal" data-target="#myModal2">Softwares</button>
 
@@ -172,15 +183,7 @@ confirm_logged_in();
   
   <form action="/cgi-bin/installing_instance.py?user=<?php echo $_SESSION['username'] ?>" method="post">
         	<div class="form-group">
-  <label for="sel1">Select One</label>
-  <select name="instance" class="form-control" id="sel1">
-    <option value="xsmall">xSmall </option>
-    <option value="small">Small</option>
-    <option value="medium">Medium</option>
-    <option value="large">Large</option>
-    <option value="xlarge">xLarge</option>
-  </select>
-   <br/>
+ 
   <label  for="sel2">Select OS</label>
   <select name="os" class="form-control" id="sel2">
     <option value="Centos">CentOS </option>
@@ -192,12 +195,17 @@ confirm_logged_in();
   <br/>
   
   <label for="os_name">Name</label>
+<<<<<<< HEAD
   <input type="text" name='instance_name'class="form-control" id="os_name">
+=======
+  <input type="text" class="form-control" placeholder="Enter Name for your OS" id="os_name">
+>>>>>>> 54c050bf0287997511369755975d5fe22df9b0be
 </div>
         <h2>Flavours</h2>      
   <table class="table table-hover">
     <thead>
       <tr>
+      	<th>Select</th>
         <th>Flavour</th>
         <th>RAM</th>
         <th>Disk</th>
@@ -206,30 +214,35 @@ confirm_logged_in();
     </thead>
     <tbody>
       <tr>
+      	<td><input type="radio" name="1" value="xs" checked /></td>
         <td>xSmall</td>
         <td>1 GB</td>
         <td>100 Gb</td>
         <td>1</td>
       </tr>
      <tr>
+     	<td><input type="radio" name="1" value="s" /></td>
         <td>Small</td>
         <td>2.5 GB</td>
         <td>250 Gb</td>
         <td>2</td>
       </tr>
       <tr>
+      	<td><input type="radio" name="1"  value="m" /></td>
         <td>Medium</td>
         <td>4 GB</td>
         <td>500 Gb</td>
         <td>4</td>
       </tr>
       <tr>
+      	<td><input type="radio" name="1"  value="l" /></td>
         <td>Large</td>
         <td>8 GB</td>
         <td>750 Gb</td>
         <td>4</td>
       </tr>
       <tr>
+      	<td><input type="radio"  name="1" value="xl" /></td>
         <td>xLarge</td>
         <td>16 GB</td>
         <td>1000 Gb</td>
