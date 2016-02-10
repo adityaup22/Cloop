@@ -70,7 +70,7 @@ confirm_logged_in();
 </nav>
 <!------------------------------------navigation over------------------------------->
 
-<<<<<<< HEAD
+
 <!----- alert msg for user----->
 
 	<?php
@@ -83,7 +83,7 @@ confirm_logged_in();
     </div>";
 	}
 	?>
-=======
+
 
 <!----- alert msg for user----->
 <div class=" alert alert-success myclass"  id="msg">
@@ -92,7 +92,6 @@ confirm_logged_in();
 </div>
 
 
->>>>>>> 54c050bf0287997511369755975d5fe22df9b0be
 
 <button  class="click" id="one" data-toggle="modal" data-target="#myModal2">Softwares</button>
 
@@ -195,11 +194,9 @@ confirm_logged_in();
   <br/>
   
   <label for="os_name">Name</label>
-<<<<<<< HEAD
+
   <input type="text" name='instance_name'class="form-control" id="os_name">
-=======
-  <input type="text" class="form-control" placeholder="Enter Name for your OS" id="os_name">
->>>>>>> 54c050bf0287997511369755975d5fe22df9b0be
+  <input type="text" class="form-control" placeholder="Enter Name for your OS" id="os_name>
 </div>
         <h2>Flavours</h2>      
   <table class="table table-hover">
