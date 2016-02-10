@@ -3,7 +3,7 @@ $ (function(){
 	x.hide();
 	
 	x.fadeIn("slow","swing");
-	x.animate({top:'8%'},"slow");
+	x.animate({top:'9%'},"slow");
 	
 	x.fadeOut(2000,"swing");
 	x.animate({top:'0%'},"slow");	
