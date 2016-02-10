@@ -1,4 +1,4 @@
-/*$ (function(){
+$ (function(){
 	
 	
-	$('#msg').fadeOut(4000,"swing");})*/
+	$('#msg').fadeOut(4000,"swing");})

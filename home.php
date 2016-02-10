@@ -19,7 +19,7 @@
 	
            <div class="alert alert-success fade in" id="msg">
     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-    <strong>Welcome!</strong>  <?php if(isset($_SESSION['username']))echo ucfirst($_SESSION['username']); ?>
+    <strong>Welcome!</strong>   
   </div>
  <nav class='navbar navbar-inverse navbar-fixed-top' role='navigation'>
             <!--          Brand and toggle get grouped for better mobile display          -->
@@ -189,11 +189,35 @@
 <!--------------------------------------      End of modal     ----------------------------->
     
     <?php
-	if(logged_in())
+	if(isset($_SESSION['not']))
 			{
 			echo"<div class='alert alert-success fade in' id='msg'>
     <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-    <strong>Welcome!</strong></div>";}
+    <strong>Not Logged In.!!</strong></div>";
+    unset($_SESSION['not']);
+			}
+  
+  
+    if(isset($_SESSION['logout']))
+			{
+			echo"<div class='alert alert-success fade in' id='msg'>
+    <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+    <strong>Succesfully Logged Out..!!</strong></div>";
+    unset($_SESSION['logout']);
+    
+    
+    }
+
+	if(isset($_SESSION['failure_login']))
+			{
+			echo"<div class='alert alert-success fade in' id='msg'>
+    <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+    <strong>Wrong credentials..!!</strong></div>";
+    unset($_SESSION['failure_login']);
+    
+    
+    }
+  
   
 			
            ?>     

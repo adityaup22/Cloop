@@ -22,7 +22,7 @@ if(isset($_COOKIE[session_name()])){
 	//destroy session
 	session_destroy();
 	
-	header("Location:error.php?logout=1");
+	header("Location:handler.php?logout=1");
 	exit;
 
 

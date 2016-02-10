@@ -184,13 +184,20 @@ confirm_logged_in();
 
             <div class='container-fluid'>
            
-           <!----- alert msg for user-----> <div class="alert alert-success fade in" id="msg">
-    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+           <!----- alert msg for user-----> 
+      
       <?php 
-      $count=0;
-      if($count==0){
-      if(isset($_GET['nothing_selected']))echo "<strong>Please Select Any Instance PAL ..!!</strong>";$count++;} ?>
-  </div>
+		if(isset($_SESSION['not_selected']))
+		 {
+		echo "<div class='alert alert-success fade in' id='msg'>
+			  <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>" ;
+		
+		echo "<strong>Please Select Any Instance PAL ..!!</strong>";
+		echo "</div>";
+		unset($_SESSION['not_selected']);
+		 }
+       ?>
+  
 
                 <!-- Page Heading -->
                 <div class='row'>

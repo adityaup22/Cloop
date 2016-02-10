@@ -15,11 +15,11 @@ $_SESSION['user_id']=$found_user['id'];
 $_SESSION['username']=$found_user['username'];
 
 if($found_user){
-header("Location:services.php?sucess_login=1");
+header("Location:services.php");
 exit;
 }
 else{
-header("Location:error.php?failure_login=1");
+header("Location:handler.php?failure_login=1");
 exit;
 }
 }

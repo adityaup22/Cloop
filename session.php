@@ -7,7 +7,7 @@ function logged_in(){
 function confirm_logged_in(){
 	if(!logged_in())
 	{
-		header("Location:error.php?not=1");
+		header("Location:handler.php?not=1");
 		exit;
 		}
 	}

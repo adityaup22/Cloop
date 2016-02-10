@@ -70,10 +70,18 @@ confirm_logged_in();
 </nav>
 <!------------------------------------navigation over------------------------------->
 
-<!----- alert msg for user-----> <div class="alert alert-success fade in" id="msg">
-    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-    <strong>Welcome!</strong>
-    </div>
+<!----- alert msg for user----->
+
+	<?php
+	if(isset($_SESSION['required']))
+	{
+	echo "
+	<div class='alert alert-success fade in' id='msg'>
+    <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+    <strong>Welcome! </strong>
+    </div>";
+	}
+	?>
 
 <button  class="click" id="one" data-toggle="modal" data-target="#myModal2">Softwares</button>
 
@@ -162,7 +170,7 @@ confirm_logged_in();
       <div class="modal-body">
         	<div class="container-fluid">
   
-  <form action="/cgi-bin/test1.py?user=<?php echo $_SESSION['username'] ?>" method="post">
+  <form action="/cgi-bin/installing_instance.py?user=<?php echo $_SESSION['username'] ?>" method="post">
         	<div class="form-group">
   <label for="sel1">Select One</label>
   <select name="instance" class="form-control" id="sel1">
@@ -184,7 +192,7 @@ confirm_logged_in();
   <br/>
   
   <label for="os_name">Name</label>
-  <input type="text" class="form-control" id="os_name">
+  <input type="text" name='instance_name'class="form-control" id="os_name">
 </div>
         <h2>Flavours</h2>      
   <table class="table table-hover">
