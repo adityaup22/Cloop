@@ -5,5 +5,6 @@ $(function(){
 	
 	$(".btn-create").click(function(){
 		file.toggle();
-		})
+		});
+	
 	})
