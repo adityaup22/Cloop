@@ -150,7 +150,8 @@
                 <ul class='nav navbar-nav side-nav'>
                 	 <li  >
                    		<div class="container ">
-                        	<button class="btn btn-lg btn-info btn-create">Create</button>
+                        	<button class="btn btn-lg btn-info btn-create " >Create</button>
+                            
                         </div>
                         
                     </li>
@@ -182,6 +183,27 @@
 <iframe class="main" src="files.php"></iframe>
 </div>
 
+
+<!-------------new file , folder division----------------------->
+<div class="mycontainer container-fluid ">
+
+      
+                      
+                     
+                      <ul class="nav myul"> 
+                      <li><br/></li>
+                      <li><button class="btn file-upload"><i class='fa fa-fw  fa-folder'></i>New Folder</button></li>
+                      <li><br/></li>
+                     <li> <button class="btn file-upload"><i class="fa fa-file"></i><input type="file" class="file-input">Upload File</button></li>
+
+                      </ul>
+                      </div></div>
+                            
+                
 </div>
+
+
+
+</div><!--------------------Wrapper end---------->
 </body>
 </html>
