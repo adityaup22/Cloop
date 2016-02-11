@@ -150,7 +150,7 @@
                 <ul class='nav navbar-nav side-nav'>
                 	 <li  >
                    		<div class="container ">
-                        	<button class="btn btn-lg btn-info btn-create " >Create</button>
+                        	<button class="btn btn-lg btn-info btn-create " >New</button>
                             
                         </div>
                         
@@ -192,7 +192,7 @@
                      
                       <ul class="nav myul"> 
                       <li><br/></li>
-                      <li><button class="btn file-upload"><i class='fa fa-fw  fa-folder'></i>New Folder</button></li>
+                      <li><button class="btn file-upload"  data-toggle='modal' data-target="#myModal" data-backdrop="static"><i class='fa fa-fw  fa-folder'></i>New Folder</button></li>
                       <li><br/></li>
                      <li> <button class="btn file-upload"><i class="fa fa-file"></i><input type="file" class="file-input">Upload File</button></li>
 
@@ -201,7 +201,33 @@
                             
                 
 </div>
+<!------------------------newfile,folder division end------------>
 
+<!---------modal for new folder--------------------------->
+
+<div id='myModal' class='modal fade' role='dialog'>
+  <div class='modal-dialog modal-sm'>
+
+    <!-- Modal content-->
+    <div class='modal-content'>
+      <div class='modal-header' style='padding:15px 20px;'>
+        <button type='button' class='close' data-dismiss='modal'>&times;</button>
+        <h4 ><i class="fa fa-plus"></i>New Folder </h4>
+      </div>
+      <div class='modal-body'>
+      	<form action='' id='' method='post'>
+        
+        	<input type="text" class="form-control" placeholder="Enter Name of folder">
+            <br/>
+            <button type="submit" class="btn btn-sm btn-primary  " id="mybutton">Create </button>
+            <button type='button' class='btn btn-sm btn-default' id="mybutton2" data-dismiss='modal'>Cancel</button>
+		</form>
+      </div>
+     
+    </div>
+
+  </div>
+</div>
 
 
 </div><!--------------------Wrapper end---------->
