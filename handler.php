@@ -3,6 +3,8 @@
 <?php 
 session_start();
 
+//No INstacne Selected
+
 if(isset($_GET['not_selected']))
 {
 	$_SESSION['not_selected']=1;
@@ -14,24 +16,50 @@ if(isset($_GET['not_selected']))
 	
 }
 
+//Not Logged In
+
 if(isset($_GET['not']))
 {
 	$_SESSION['not']=1;
 	header("Location:home.php");
 }
 
+//Logged out Successfully
 if(isset($_GET['logout']))
 {
 	$_SESSION['logout']=1;
 	header("Location:home.php");
 }
 
-
+//Wrong Credentials Provided
 if(isset($_GET['failure_login']))
 {
 	$_SESSION['failure_login']=1;
 	header("Location:home.php");
 }
+
+//If Name In Infra Not mentioned..
+if(isset($_GET['not_name']))
+{
+	$_SESSION['not_name']=1;
+	header("Location:services.php");
+}
+
+
+if(isset($_GET['instance_deleted']))
+{
+	$_SESSION['instance_deleted']=$_GET['instance_deleted'];
+	header("Location:instance.php");
+}
+
+if(isset($_GET['terminate']))
+{
+	$_SESSION['terminate']=$_GET['terminate'];
+	header("Location:instance.php");
+}
+
+
+
 
 exit;
 

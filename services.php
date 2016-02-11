@@ -71,16 +71,18 @@ confirm_logged_in();
 <!------------------------------------navigation over------------------------------->
 
 
-<!----- alert msg for user----->
+					
+					<!----- alert msg for user----->
 
 	<?php
-	if(isset($_SESSION['username']))
+	if(isset($_SESSION['not_name']))
 	{
 	echo "
-	<div class='alert alert-info fade in myclass' id='msg'>
+	<div class='alert alert-warning fade in myclass' id='msg'>
     <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-    <strong>Welcome ! </strong>
+    <strong>Enter Instance Name !</strong>
     </div>";
+    unset($_SESSION['not_name']);
 	}
 	?>
 
@@ -211,35 +213,35 @@ confirm_logged_in();
     </thead>
     <tbody>
       <tr>
-      	<td><input type="radio" name="1" value="xs" checked /></td>
+      	<td><input type="radio" name="option" value="xsmall" checked /></td>
         <td>xSmall</td>
         <td>1 GB</td>
         <td>100 Gb</td>
         <td>1</td>
       </tr>
      <tr>
-     	<td><input type="radio" name="1" value="s" /></td>
+     	<td><input type="radio" name="option" value="small" /></td>
         <td>Small</td>
         <td>2.5 GB</td>
         <td>250 Gb</td>
         <td>2</td>
       </tr>
       <tr>
-      	<td><input type="radio" name="1"  value="m" /></td>
+      	<td><input type="radio" name="option"  value="medium" /></td>
         <td>Medium</td>
         <td>4 GB</td>
         <td>500 Gb</td>
         <td>4</td>
       </tr>
       <tr>
-      	<td><input type="radio" name="1"  value="l" /></td>
+      	<td><input type="radio" name="option"  value="large" /></td>
         <td>Large</td>
         <td>8 GB</td>
         <td>750 Gb</td>
         <td>4</td>
       </tr>
       <tr>
-      	<td><input type="radio"  name="1" value="xl" /></td>
+      	<td><input type="radio"  name="option" value="xlarge" /></td>
         <td>xLarge</td>
         <td>16 GB</td>
         <td>1000 Gb</td>

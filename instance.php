@@ -196,6 +196,29 @@ confirm_logged_in();
     </div>";
     unset($_SESSION['not_selected']);
 	}
+	
+	if(isset($_SESSION['instance_deleted']))
+	{
+	echo "
+	<div class='alert alert-danger fade in myclass' id='msg'>
+    <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+    <strong>Instance {$_SESSION['instance_deleted']} Deleted !</strong>
+    </div>";
+    unset($_SESSION['instance_deleted']);
+	}
+	
+	if(isset($_SESSION['terminate']))
+	{
+	echo "
+	<div class='alert alert-danger fade in myclass' id='msg'>
+    <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+    <strong>Instance {$_SESSION['terminate']} terminated !</strong>
+    </div>";
+    unset($_SESSION['terminate']);
+	}
+	
+	
+	
 	?>
 
       
@@ -221,7 +244,8 @@ confirm_logged_in();
 				
 				
                 
-               <button type="submit" name="terminate" class="btn-danger btn" form="iform2" >Terminate Instance</button><br/>
+               <button type="submit" name="terminate" value="terminate" class="btn-warning btn" form="iform" >Terminate Instance</button>
+               <button type="submit" name="delete" value="delete" class="btn-danger btn" form="iform" >Delete Instance</button><br/>
                
                
                <table class="table table-bordered   table-hover table-responsive mytable" id="instancetable">
@@ -235,7 +259,7 @@ confirm_logged_in();
                <th>Disk</th>
                <th>Status</th>
                <?php
-               $url=urlencode($_SESSION['username']);               
+                         
                $query= "SELECT * FROM instance WHERE username='{$_SESSION['username']}' ";
 				$result=mysql_query($query,$connection);
 				while($user=mysql_fetch_array($result))
@@ -247,7 +271,7 @@ confirm_logged_in();
                 
                 echo "<tr>";
                
-               	echo "<td><input type=\"checkbox\" name=\"os_name\" form=\"iform\" value=\"{$os}\"></td>";
+               	echo "<td><input type=\"radio\" name=\"os_name\" form=\"iform\" value=\"{$os}\"></td>";
                	echo "<td> {$os}</td>";
                 echo "<td></td>";
                 echo "<td>{$ram}</td>";
