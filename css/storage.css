@@ -20,7 +20,7 @@
 .mycontainer{
 	
 	position:absolute;
-	left:9%;
+	left:8%;
 	width:13%;
 	height:30%;
 	top:15%;
@@ -34,7 +34,9 @@
   position: relative;
   overflow: hidden;
   margin: 0px;
-  padding:5px 25px; }
+  padding:5px 25px;
+ 
+  cursor:pointer; }
 
 .file-upload input.file-input {
   position: absolute;
@@ -54,3 +56,24 @@
 #mybutton2{
 	position:relative;
 	left:15%;}
+
+.newfile-div{
+	position: relative;
+  overflow: hidden;
+  margin: 0px;
+  padding:5px 25px;
+  background-color:rgb(221, 221, 221);
+  cursor:pointer; 
+  border-radius:4px;
+	
+	}
+.newfile{
+	background-color:grey;
+	position:absolute;
+	top:0%;
+	left:0%;
+	width:100%;
+	height:100%;
+	opacity:0;
+	cursor:pointer;
+	;}

@@ -194,7 +194,7 @@
                       <li><br/></li>
                       <li><button class="btn file-upload"  data-toggle='modal' data-target="#myModal" data-backdrop="static"><i class='fa fa-fw  fa-folder'></i>New Folder</button></li>
                       <li><br/></li>
-                     <li> <button class="btn file-upload"><i class="fa fa-file"></i><input type="file" class="file-input">Upload File</button></li>
+                     <li><div class="newfile-div"><i class="fa fa-file"></i> New File<input type="file" class="newfile"></li></div>
 
                       </ul>
                       </div></div>
