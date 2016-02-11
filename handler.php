@@ -58,6 +58,12 @@ if(isset($_GET['terminate']))
 	header("Location:instance.php");
 }
 
+if(isset($_GET['terminate_first']))
+{
+	$_SESSION['terminate_first']=$_GET['terminate_first'];
+	header("Location:instance.php");
+}
+
 
 
 

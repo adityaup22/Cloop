@@ -1,3 +1,7 @@
+<?php require_once('session.php');
+require_once('connection.php');
+confirm_logged_in();
+?>
 <!doctype html>
 <html>
 <head>

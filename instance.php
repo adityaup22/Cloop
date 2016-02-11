@@ -187,24 +187,25 @@ confirm_logged_in();
            <!----- alert msg for user-----> 
       
       <?php
-	if(isset($_SESSION['not_selected']))
-	{
-	echo "
+      
+      function alertmsg($var,$message)
+      {
+		  echo "
 	<div class='alert alert-danger fade in myclass' id='msg'>
     <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-    <strong>Select Any Instance Pal !!</strong>
+    <strong>{$message}</strong>
     </div>";
-    unset($_SESSION['not_selected']);
+    unset($var);
+	  }
+	  
+	if(isset($_SESSION['not_selected']))
+	{
+		alertmsg($_SESSION['not_selected'],"Please Select Any Instance Pal !!");
 	}
 	
 	if(isset($_SESSION['instance_deleted']))
 	{
-	echo "
-	<div class='alert alert-danger fade in myclass' id='msg'>
-    <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-    <strong>Instance {$_SESSION['instance_deleted']} Deleted !</strong>
-    </div>";
-    unset($_SESSION['instance_deleted']);
+		displaymsg
 	}
 	
 	if(isset($_SESSION['terminate']))
@@ -217,7 +218,15 @@ confirm_logged_in();
     unset($_SESSION['terminate']);
 	}
 	
-	
+	if(isset($_SESSION['terminate_first']))
+	{
+	echo "
+	<div class='alert alert-danger fade in myclass' id='msg'>
+    <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+    <strong>Terminate {$_SESSION['terminate']} first !</strong>
+    </div>";
+    unset($_SESSION['terminate_first']);
+	}
 	
 	?>
 
@@ -276,13 +285,15 @@ confirm_logged_in();
                 echo "<td></td>";
                 echo "<td>{$ram}</td>";
                 echo "<td>{$disk}</td>";
+                echo "<td>Running</td>";
 			}
                 ?>
-                <td><div class="progress">
+          <!--      <td><div class="progress">
   <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
   aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
     80% Building
-  </div></td>     <!--this progress bar can be displayed when instance is building and its progress can be varied by changing its "width" so it must be managed by the script and continuously script must be triggred to check the progress and width must be adjusted... --->
+  </div></td>   -->
+      <!--this progress bar can be displayed when instance is building and its progress can be varied by changing its "width" so it must be managed by the script and continuously script must be triggred to check the progress and width must be adjusted... --->
                </tr>
                
                
