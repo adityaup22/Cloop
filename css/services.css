@@ -57,10 +57,11 @@ img{
 .myclass{
 	
 	position:absolute;
-	top:0%;
+	top:9%;
 	
-	width:100%;
+	width:95%;
 	
-	left:0%;
+	left:2.5%;
+	text-align:center;
 	
 	}

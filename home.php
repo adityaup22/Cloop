@@ -9,19 +9,54 @@
 
 <link rel='stylesheet' href='font-awesome/css/font-awesome.css' />
 <link rel='stylesheet' href='css/home.css' />
-<script src='js/jquery.js' ></script>
-<script src='js/bootstrap.js'></script>
-<script src='js/home.js'></script>
-<script src='js/instance.js'></script>
+<script src="js/jquery.js" ></script>
+<script src="js/home.js"></script>
+<script src="js/bootstrap.js"></script>
 </head>
 
 <body>
 	
 <!------ alert msg------------->
-   <div class=" alert alert-success myclass"  id="msg">
+   
+
+ 
+ <?php
+	if(isset($_SESSION['not']))
+			{
+			echo "
+			<div class='alert alert-success fade in myclass' id='msg'>
+			<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+			<strong>Not Logged In!</strong>
+			</div>";
+			unset($_SESSION['not']);
+			}
+  
+  
+    if(isset($_SESSION['logout']))
+			{
+			echo "
+			<div class='alert alert-success fade in myclass' id='msg'>
+			<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+			<strong>Successfully Logged Out!</strong>
+			</div>";
+			unset($_SESSION['logout']);
     
-    <strong>Welcome!</strong>
-</div>
+			}
+
+	if(isset($_SESSION['failure_login']))
+			{
+			echo "
+			<div class='alert alert-success fade in myclass' id='msg'>
+			<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+			<strong>Wrong Credentials!</strong>
+			</div>";
+			unset($_SESSION['failure_login']);
+    
+			}
+  ?>
+  
+
+
 <!--------------------->         
 
  <nav class='navbar navbar-inverse navbar-fixed-top' role='navigation'>
@@ -192,38 +227,8 @@
 <!--------------------------------------      End of modal     ----------------------------->
     
 
-    <?php
-	if(isset($_SESSION['not']))
-			{
-			echo"<div class='alert alert-success fade in' id='msg'>
-    <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-    <strong>Not Logged In.!!</strong></div>";
-    unset($_SESSION['not']);
-			}
+   
   
-  
-    if(isset($_SESSION['logout']))
-			{
-			echo"<div class='alert alert-success fade in' id='msg'>
-    <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-    <strong>Succesfully Logged Out..!!</strong></div>";
-    unset($_SESSION['logout']);
-    
-    
-    }
-
-	if(isset($_SESSION['failure_login']))
-			{
-			echo"<div class='alert alert-success fade in' id='msg'>
-    <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-    <strong>Wrong credentials..!!</strong></div>";
-    unset($_SESSION['failure_login']);
-    
-    
-    }
-  ?>
-  
-  <!----- alert msg for user----->
 
 
 			

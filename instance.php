@@ -183,27 +183,22 @@ confirm_logged_in();
 <div id='page-wrapper'>
 
             <div class='container-fluid'>
-            <!----- alert msg for user----->
-<div class=" alert alert-success myclass"  id="msg">
-    
-    <strong>Welcome!</strong>
-</div>
            
            <!----- alert msg for user-----> 
       
-      <?php 
-		if(isset($_SESSION['not_selected']))
-		 {
-		echo "<div class='alert alert-success fade in' id='msg'>
-			  <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>" ;
-		
-		echo "<strong>Please Select Any Instance PAL ..!!</strong>";
-		echo "</div>";
-		unset($_SESSION['not_selected']);
-		 }
-       ?>
-  
+      <?php
+	if(isset($_SESSION['username']))
+	{
+	echo "
+	<div class='alert alert-info fade in myclass' id='msg'>
+    <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+    <strong>Welcome! </strong>
+    </div>";
+	}
+	?>
 
+      
+      
                 <!-- Page Heading -->
                 <div class='row'>
                     <div class='col-lg-12'>
