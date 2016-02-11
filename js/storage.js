@@ -1,7 +1,7 @@
 $(function(){
 	
 	var file = $(".mycontainer");
-	//file.hide();
+	file.hide();
 	
 	$(".btn-create").click(function(){
 		file.toggle();
