@@ -66,6 +66,15 @@ if(isset($_GET['terminate_first']))
 
 
 
+if(isset($_GET['instance_already']))
+{
+	$_SESSION['instance_already']=$_GET['instance_already'];
+	header("Location:services.php");
+}
+
+
+
+
 
 exit;
 

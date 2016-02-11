@@ -78,12 +78,26 @@ confirm_logged_in();
 	if(isset($_SESSION['not_name']))
 	{
 	echo "
-	<div class='alert alert-warning fade in myclass' id='msg'>
+	<div class='alert alert-danger fade in myclass' id='msg'>
     <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
     <strong>Enter Instance Name !</strong>
     </div>";
     unset($_SESSION['not_name']);
 	}
+	
+	
+	if(isset($_SESSION['instance_already']))
+	{
+	echo "
+	<div class='alert alert-danger fade in myclass' id='msg'>
+    <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+    <strong>Instance {$_SESSION['instance_already']} Already Present !</strong>
+    </div>";
+    unset($_SESSION['instance_already']);
+	}
+	
+	
+	
 	?>
 
 

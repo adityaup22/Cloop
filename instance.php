@@ -187,25 +187,24 @@ confirm_logged_in();
            <!----- alert msg for user-----> 
       
       <?php
-      
-      function alertmsg($var,$message)
-      {
-		  echo "
-	<div class='alert alert-danger fade in myclass' id='msg'>
-    <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-    <strong>{$message}</strong>
-    </div>";
-    unset($var);
-	  }
-	  
 	if(isset($_SESSION['not_selected']))
 	{
-		alertmsg($_SESSION['not_selected'],"Please Select Any Instance Pal !!");
+	echo "
+	<div class='alert alert-danger fade in myclass' id='msg'>
+    <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+    <strong>Select Any Instance Pal !!</strong>
+    </div>";
+    unset($_SESSION['not_selected']);
 	}
 	
 	if(isset($_SESSION['instance_deleted']))
 	{
-		displaymsg
+	echo "
+	<div class='alert alert-danger fade in myclass' id='msg'>
+    <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+    <strong>Instance {$_SESSION['instance_deleted']} Deleted !</strong>
+    </div>";
+    unset($_SESSION['instance_deleted']);
 	}
 	
 	if(isset($_SESSION['terminate']))
