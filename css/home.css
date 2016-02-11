@@ -19,10 +19,11 @@
 .myclass{
 	z-index:10000;
 	position:absolute;
-	top:0%;
+	top:9%;
 	
-	width:100%;
+	width:90%;
 	
-	left:0%;
+	left:5%;
+	text-align:center;
 	
 	}
