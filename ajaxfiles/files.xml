@@ -1,6 +1,7 @@
 <FILES>
 
 <FILE>
+<TYPE>File</TYPE>
 <NAME>cloop.rar</NAME>
 <SIZE>15 MB</SIZE>
 <OWNER>me</OWNER>
@@ -8,6 +9,7 @@
 </FILE>
 
 <FILE>
+<TYPE>File</TYPE>
 <NAME>cloop.rar</NAME>
 <SIZE>15 MB</SIZE>
 <OWNER>me</OWNER>
@@ -15,6 +17,7 @@
 </FILE>
 
 <FILE>
+<TYPE>File</TYPE>
 <NAME>cloop.rar</NAME>
 <SIZE>15 MB</SIZE>
 <OWNER>me</OWNER>
@@ -22,6 +25,15 @@
 </FILE>
 
 <FILE>
+<TYPE>Folder</TYPE>
+<NAME>My photos</NAME>
+<SIZE>150 MB</SIZE>
+<OWNER>me</OWNER>
+<MODIFIED>10 FEB 2016</MODIFIED>
+</FILE>
+
+<FILE>
+<TYPE>File</TYPE>
 <NAME>cloop.rar</NAME>
 <SIZE>15 MB</SIZE>
 <OWNER>me</OWNER>
@@ -29,13 +41,7 @@
 </FILE>
 
 <FILE>
-<NAME>cloop.rar</NAME>
-<SIZE>15 MB</SIZE>
-<OWNER>me</OWNER>
-<MODIFIED>7 FEB 2016</MODIFIED>
-</FILE>
-
-<FILE>
+<TYPE>File</TYPE>
 <NAME>cloop.rar</NAME>
 <SIZE>15 MB</SIZE>
 <OWNER>me</OWNER>
@@ -44,6 +50,7 @@
 
 
 <FILE>
+<TYPE>File</TYPE>
 <NAME>cloop.rar</NAME>
 <SIZE>15 MB</SIZE>
 <OWNER>me</OWNER>

@@ -28,12 +28,14 @@ function myFunction(xml) {
   var table="<tr><th>Name</th><th>Owner</th><th>Last Modified</th><th>Size</th></tr>";
   
   for (i = 0; i <file.length; i++) { 
+  	
+  	if(file[i].getElementsByTagName('TYPE')[0].childNodes[0].nodeValue ==="File"){
     table += "<tr><td >" +
     file[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
     "</td><td>" +
     file[i].getElementsByTagName("OWNER")[0].childNodes[0].nodeValue + "</td><td>" +
 	file[i].getElementsByTagName("MODIFIED")[0].childNodes[0].nodeValue +"</td><td>" +
-	 file[i].getElementsByTagName("SIZE")[0].childNodes[0].nodeValue 
+	 file[i].getElementsByTagName("SIZE")[0].childNodes[0].nodeValue }//end of if
   		}//end of for loop
   document.getElementById("file").innerHTML = table;
 
