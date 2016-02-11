@@ -22,15 +22,15 @@
 
 </head>
 <body onLoad="loadthis()" >
-<h1 style="text-align:center;" >Files</h1>
+
 
 <!------------------- new file--------------------->
 
 
 
 
-<div class="container-fluid" >
-<table class="table  table-bordered table-hover table-responsive" id="file" ></table>
+
+<table class="table  table-responsive" id="file" ></table>
   
 
 </div>
