@@ -187,13 +187,14 @@ confirm_logged_in();
            <!----- alert msg for user-----> 
       
       <?php
-	if(isset($_SESSION['username']))
+	if(isset($_SESSION['not_selected']))
 	{
 	echo "
-	<div class='alert alert-info fade in myclass' id='msg'>
+	<div class='alert alert-danger fade in myclass' id='msg'>
     <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-    <strong>Welcome! </strong>
+    <strong>Select Any Instance Pal !!</strong>
     </div>";
+    unset($_SESSION['not_selected']);
 	}
 	?>
 
