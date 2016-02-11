@@ -30,18 +30,18 @@ function myFunction(xml) {
   for (i = 0; i <file.length; i++) { 
   	
   	if(file[i].getElementsByTagName('TYPE')[0].childNodes[0].nodeValue ==="File"){
-    table += "<tr><td ><i class='fa fa-file'></i> " +
+    table += "<tr><td ><i class='fa fa-file'></i><a> " +
     file[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
-    "</td><td>" +
+    "</a></td><td>" +
     file[i].getElementsByTagName("OWNER")[0].childNodes[0].nodeValue + "</td><td>" +
 	file[i].getElementsByTagName("MODIFIED")[0].childNodes[0].nodeValue +"</td><td>" +
 	 file[i].getElementsByTagName("SIZE")[0].childNodes[0].nodeValue }//end of if
 	
 	
 	 else if(file[i].getElementsByTagName('TYPE')[0].childNodes[0].nodeValue ==="Folder"){
-		 table += "<tr><td ><i class='fa fa-folder-open'></i> " +
+		 table += "<tr><td ><i class='fa fa-folder-open'></i><a> " +
     file[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
-    "</td><td>" +
+    "</a></td><td>" +
     file[i].getElementsByTagName("OWNER")[0].childNodes[0].nodeValue + "</td><td>" +
 	file[i].getElementsByTagName("MODIFIED")[0].childNodes[0].nodeValue +"</td><td>" +
 	 file[i].getElementsByTagName("SIZE")[0].childNodes[0].nodeValue

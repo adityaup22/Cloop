@@ -159,14 +159,14 @@ confirm_logged_in();
                         </div>
                         
                     </li>
-                    <li >
-                        <a href='#'><i class='fa fa-fw  fa-folder-open'></i> My Box</a>
+                    <li class="sidemenu active" id="box" >
+                        <a href='#' ><i class='fa fa-fw  fa-folder-open'></i> My Box</a>
                     </li>
-                    <li>
-                        <a href='services.php'><i class='fa fa-fw fa-users'></i> Shared With me</a>
-                    </li>
-                    <li>
-                        <a href='#'><i class='glyphicon glyphicon-trash'></i> DustBin</a>
+                    <li class="sidemenu" id="shared">
+                        <a href='#' ><i class='fa fa-fw fa-users'></i> Shared With me</a>
+                    </li >
+                    <li class="sidemenu" id="bin">
+                        <a href='#' ><i class='glyphicon glyphicon-trash'></i> DustBin</a>
                     </li>
                     
                    

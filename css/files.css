@@ -22,3 +22,8 @@ th{
 	
 	
 	background-color: #f1f1f1}
+td a{
+	color:black;
+	cursor:pointer;}
+td a:hover{
+	text-decoration:none;}
