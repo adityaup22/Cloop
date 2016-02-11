@@ -8,17 +8,17 @@ h1{
 	}
 
 table {
-	text-align:center;
+	
     width: 100%;
     border-collapse: collapse;
 	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 
 }
-th, td {
-    border: 1px solid grey;
-    padding: 5px;
-    text-align: center;
-}
-table tr:nth-child(odd) {
-    background-color: #f1f1f1;
-}
+
+	
+
+th{
+	text-align:left;
+	
+	
+	background-color: #f1f1f1}

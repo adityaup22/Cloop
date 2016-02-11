@@ -16,7 +16,7 @@
 
 <body>
 	
-<!------ alert msg------------->
+<!------ alert msgs------------->
    
 
  
@@ -31,7 +31,7 @@
 			unset($_SESSION['not']);
 			}
   
-  
+  //---------------------------logout msg-----------------------
     if(isset($_SESSION['logout']))
 			{
 			echo "
@@ -42,7 +42,7 @@
 			unset($_SESSION['logout']);
     
 			}
-
+//---------------------------login failure------------------
 	if(isset($_SESSION['failure_login']))
 			{
 			echo "
