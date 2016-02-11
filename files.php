@@ -28,7 +28,7 @@
 
 
 
-
+<div class="container-fluid">
 
 <table class="table  table-responsive" id="file" ></table>
   
