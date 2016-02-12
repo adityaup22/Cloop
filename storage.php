@@ -159,14 +159,14 @@ confirm_logged_in();
                         </div>
                         
                     </li>
-                    <li class="sidemenu active" id="box" >
-                        <a href='#' ><i class='fa fa-fw  fa-folder-open'></i> My Box</a>
+                    <li >
+                        <a href='#'><i class='fa fa-fw  fa-folder-open'></i> My Box</a>
                     </li>
-                    <li class="sidemenu" id="shared">
-                        <a href='#' ><i class='fa fa-fw fa-users'></i> Shared With me</a>
-                    </li >
-                    <li class="sidemenu" id="bin">
-                        <a href='#' ><i class='glyphicon glyphicon-trash'></i> DustBin</a>
+                    <li>
+                        <a href='services.php'><i class='fa fa-fw fa-users'></i> Shared With me</a>
+                    </li>
+                    <li>
+                        <a href='#'><i class='glyphicon glyphicon-trash'></i> DustBin</a>
                     </li>
                     
                    
@@ -196,9 +196,9 @@ confirm_logged_in();
                      
                       <ul class="nav myul"> 
                       <li><br/></li>
-                      <li><button class="btn file-upload"  data-toggle='modal' data-target="#myModal" data-backdrop="static"><i class='fa fa-fw  fa-folder'></i>New Folder</button></li>
+                      <li><button class="btn file-upload"  data-toggle='modal' data-target="#myModal" data-backdrop="static"><i class='fa fa-fw  fa-folder'></i>Create Folder</button></li>
                       <li><br/></li>
-                     <li><div class="newfile-div"><i class="fa fa-file"></i> New File<input type="file" class="newfile"></li></div>
+                     <li><div class="newfile-div"><i class="fa fa-file"></i>Upload<input type="file" class="newfile"></li></div>
 
                       </ul>
                       </div></div>

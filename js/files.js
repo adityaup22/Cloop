@@ -12,7 +12,7 @@ function loadthis() {
       myFunction(xhttp);
     }
   };
-	xhttp.open("GET","ajaxfiles/files.xml", true);//file managed by python dev
+	xhttp.open("GET","ajaxfiles/test_files.xml", true);//file managed by python dev
 
   xhttp.send();
 }
@@ -33,7 +33,11 @@ function myFunction(xml) {
   for (i = 0; i <file.length; i++) { 
   	
   	if(file[i].getElementsByTagName('TYPE')[0].childNodes[0].nodeValue ==="File"){
+<<<<<<< HEAD
     table += "<a><tr><td ><i class='fa fa-file fa-fw fa-lg'></i><a class='filelist' id="+file[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue+"> " +
+=======
+    table += "<tr><td ><a href='#'><i class='fa fa-file'></i> " +
+>>>>>>> origin/master
     file[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
     "</a></td><td>" +
     file[i].getElementsByTagName("OWNER")[0].childNodes[0].nodeValue + "</td><td>" +
@@ -42,7 +46,11 @@ function myFunction(xml) {
 	
 	
 	 else if(file[i].getElementsByTagName('TYPE')[0].childNodes[0].nodeValue ==="Folder"){
+<<<<<<< HEAD
 		 table += "<tr><td ><i class='fa fa-folder-open fa-fw fa-lg'></i><a> " +
+=======
+		 table += "<tr><td ><a href='#'><i class='fa fa-folder-open'></i> " +
+>>>>>>> origin/master
     file[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
     "</a></td><td>" +
     file[i].getElementsByTagName("OWNER")[0].childNodes[0].nodeValue + "</td><td>" +
@@ -54,6 +62,7 @@ function myFunction(xml) {
 
   
 }//------------------end of myFunction-------------//
+<<<<<<< HEAD
 
 
 $(function(){
@@ -70,3 +79,5 @@ $(function(){
 		})
     
 	})
+=======
+>>>>>>> origin/master
