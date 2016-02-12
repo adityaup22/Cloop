@@ -31,9 +31,10 @@ td a:hover{
 	background-color:#f1f1f1;}
 	
 .file-option{
-	margin:10px;
+	
 	cursor:pointer;}
 	
 h3{
 	padding:opx;
-	vertical-align:central;}
+	vertical-align:central;
+	text-align:center;}
