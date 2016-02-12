@@ -28,30 +28,32 @@ function myFunction(xml) {
 	  
 	 
   
-  var table="<tr><th>Name</th><th>Owner</th><th>Last Modified</th><th>Size</th></tr>";
+  var table="<tr><th>Name</th><th>Owner</th><th>Last Modified</th><th>Size</th><th></th><th></th></tr>";
   
   for (i = 0; i <file.length; i++) { 
   	
   	if(file[i].getElementsByTagName('TYPE')[0].childNodes[0].nodeValue ==="File"){
 
-    table += "<tr><td ><a href='#'><i class='fa fa-file'></i> " +
+    table += "<tr><td ><a href='#'><i class='fa fa-file fa-fw fa-lg'></i> " +
 
     file[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
     "</a></td><td>" +
     file[i].getElementsByTagName("OWNER")[0].childNodes[0].nodeValue + "</td><td>" +
 	file[i].getElementsByTagName("MODIFIED")[0].childNodes[0].nodeValue +"</td><td>" +
-	 file[i].getElementsByTagName("SIZE")[0].childNodes[0].nodeValue +"</td></tr></a>"}//end of if
+	 file[i].getElementsByTagName("SIZE")[0].childNodes[0].nodeValue +"</td><td> <i class='fa fa-download fa-lg file-option' data-toggle='tooltip' data-placement='top' title='Download'></i></td><td><i class='fa fa-trash fa-lg file-option' data-toggle='tooltip' data-placement='top' title='Delete'></i></td></tr>"
+	 
+	 }//end of if
 	
 	
 	 else if(file[i].getElementsByTagName('TYPE')[0].childNodes[0].nodeValue ==="Folder"){
 
-		 table += "<tr><td ><i class='fa fa-folder-open fa-fw fa-lg'></i><a> " +
+		 table += "<tr><td ><i class='fa fa-folder fa-fw fa-lg'></i><a> " +
 
     file[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
     "</a></td><td>" +
     file[i].getElementsByTagName("OWNER")[0].childNodes[0].nodeValue + "</td><td>" +
 	file[i].getElementsByTagName("MODIFIED")[0].childNodes[0].nodeValue +"</td><td>" +
-	 file[i].getElementsByTagName("SIZE")[0].childNodes[0].nodeValue
+	 file[i].getElementsByTagName("SIZE")[0].childNodes[0].nodeValue+"</td><td>   <i class='fa fa-download fa-lg file-option' data-toggle='tooltip' data-placement='top' title='Download'></i></td><td><i class='fa fa-trash fa-lg file-option' data-toggle='tooltip' data-placement='top' title='Delete'></i> </td></tr>"
 		 }//end of elseif
   		}//end of for loop
   document.getElementById("file").innerHTML = table;
