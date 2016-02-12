@@ -19,11 +19,21 @@ table {
 
 th{
 	text-align:left;
-	
-	
 	background-color: #f1f1f1}
+
 td a{
 	color:black;
 	cursor:pointer;}
 td a:hover{
 	text-decoration:none;}
+
+.top-option{
+	background-color:#f1f1f1;}
+	
+.file-option{
+	margin:10px;
+	cursor:pointer;}
+	
+h3{
+	padding:opx;
+	vertical-align:central;}

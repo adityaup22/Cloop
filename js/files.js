@@ -1,4 +1,7 @@
 
+
+
+
 function loadthis() {
 	
   var xhttp = new XMLHttpRequest();
@@ -30,16 +33,16 @@ function myFunction(xml) {
   for (i = 0; i <file.length; i++) { 
   	
   	if(file[i].getElementsByTagName('TYPE')[0].childNodes[0].nodeValue ==="File"){
-    table += "<tr><td ><i class='fa fa-file'></i><a> " +
+    table += "<a><tr><td ><i class='fa fa-file fa-fw fa-lg'></i><a class='filelist' id="+file[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue+"> " +
     file[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
     "</a></td><td>" +
     file[i].getElementsByTagName("OWNER")[0].childNodes[0].nodeValue + "</td><td>" +
 	file[i].getElementsByTagName("MODIFIED")[0].childNodes[0].nodeValue +"</td><td>" +
-	 file[i].getElementsByTagName("SIZE")[0].childNodes[0].nodeValue }//end of if
+	 file[i].getElementsByTagName("SIZE")[0].childNodes[0].nodeValue +"</td></tr></a>"}//end of if
 	
 	
 	 else if(file[i].getElementsByTagName('TYPE')[0].childNodes[0].nodeValue ==="Folder"){
-		 table += "<tr><td ><i class='fa fa-folder-open'></i><a> " +
+		 table += "<tr><td ><i class='fa fa-folder-open fa-fw fa-lg'></i><a> " +
     file[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
     "</a></td><td>" +
     file[i].getElementsByTagName("OWNER")[0].childNodes[0].nodeValue + "</td><td>" +
@@ -51,3 +54,19 @@ function myFunction(xml) {
 
   
 }//------------------end of myFunction-------------//
+
+
+$(function(){
+	 $('[data-toggle="tooltip"]').tooltip();
+	
+	/*$('tr').click(function(e){
+			alert('b')
+			$("#"+e.target.id).css("background-color","#B4B4B4");
+		});*/
+	
+    
+	$(".filelist").click(function(e){
+		alert('asdasads')
+		})
+    
+	})
