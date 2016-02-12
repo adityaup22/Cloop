@@ -24,10 +24,23 @@
 <body onLoad="loadthis()" >
 
 
-<!------------------- new file--------------------->
+
+<!-------------------  fileoptions--------------------->
+
+<div class="container-fluid ">
+	<div class="row top-option ">
+    <div class="col-md-4 col-md-offset-2 ">
+    	<h3>My Box</h3>
+    </div>
+    <div class="col-md-4  ">
+	<button type="submit" class="btn btn-danger disabled file-option " data-toggle="tooltip" data-placement="bottom" title="Delete the selected file"><i class="fa fa-trash-o fa-lg " ></i>&nbsp;Delete</button>
+    <button class="btn btn-primary disabled file-option" data-toggle="tooltip" data-placement="bottom" title="Download the selected file"><i class="fa fa-download fa-lg  " ></i>&nbsp;Download</button>
+    </div>
+    </div>
+</div>
 
 
-
+<!-------------------  filedetails--------------------->
 <div class="container-fluid">
 
 <table class="table  table-responsive" id="file" ></table>
