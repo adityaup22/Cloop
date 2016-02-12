@@ -30,7 +30,7 @@ function myFunction(xml) {
   for (i = 0; i <file.length; i++) { 
   	
   	if(file[i].getElementsByTagName('TYPE')[0].childNodes[0].nodeValue ==="File"){
-    table += "<tr><td ><a href='#'><i class='fa fa-file'></i> " +
+    table += "<tr><td ><a href='"+ file[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue+"'><i class='fa fa-file'></i> " +
     file[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
     "</a></td><td>" +
     file[i].getElementsByTagName("OWNER")[0].childNodes[0].nodeValue + "</td><td>" +
