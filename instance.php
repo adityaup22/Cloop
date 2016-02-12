@@ -162,6 +162,9 @@ confirm_logged_in();
                     <li>
                         <a href='#'><i class='fa fa-fw fa-bar-chart-o'></i> Stats</a>
                     </li>
+                     <li>
+                        <a href='#' data-toggle="modal" data-target="#myModal3"><i class='fa fa-fw fa-bar-chart-o'></i> New Instance</a>
+                    </li>
                     
                    
                    
@@ -337,6 +340,102 @@ confirm_logged_in();
 
 </div>
 <!--end of wrapper-->
+
+<!-- Modal -------------------------  for iaas---------------------->
+<div id="myModal3" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Please select the apropriate Flavour. </h4>
+      </div>
+      <div class="modal-body">
+        	<div class="container-fluid">
+  
+  <form action="/cgi-bin/installing_instance.py?user=<?php echo $_SESSION['username'] ?>" method="post">
+        	<div class="form-group">
+ 
+  <label  for="sel2">Select OS</label>
+  <select name="os" class="form-control" id="sel2">
+    <option value="Centos">CentOS </option>
+    <option value="Mint">Mint</option>
+    <option value="Ubuntu">Ubuntu</option>
+    <option value="Fedora">Fedora</option>
+    
+  </select>
+  <br/>
+  
+  <label for="os_name">Name</label>
+
+  <input type="text" placeholder="Enter the name for the OS" class="form-control" name="name" />
+  
+</div>
+
+
+  
+  
+        <h2>Flavours</h2>      
+  <table class="table table-hover table-condensed table-responsive">
+    <thead>
+      <tr>
+      	<th>Select</th>
+        <th>Flavour</th>
+        <th>RAM</th>
+        <th>Disk</th>
+        <th>CPU</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      	<td><input type="radio" name="option" value="xsmall" checked /></td>
+        <td>xSmall</td>
+        <td>1 GB</td>
+        <td>100 Gb</td>
+        <td>1</td>
+      </tr>
+     <tr>
+     	<td><input type="radio" name="option" value="small" /></td>
+        <td>Small</td>
+        <td>2.5 GB</td>
+        <td>250 Gb</td>
+        <td>2</td>
+      </tr>
+      <tr>
+      	<td><input type="radio" name="option"  value="medium" /></td>
+        <td>Medium</td>
+        <td>4 GB</td>
+        <td>500 Gb</td>
+        <td>4</td>
+      </tr>
+      <tr>
+      	<td><input type="radio" name="option"  value="large" /></td>
+        <td>Large</td>
+        <td>8 GB</td>
+        <td>750 Gb</td>
+        <td>4</td>
+      </tr>
+      <tr>
+      	<td><input type="radio"  name="option" value="xlarge" /></td>
+        <td>xLarge</td>
+        <td>16 GB</td>
+        <td>1000 Gb</td>
+        <td>8</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<input type="submit" name="submit" value="Submit" class="btn btn-primary btn-block">
+		
+		</form>
+      </div>
+     
+    </div>
+
+  </div>
+</div>
 
 
 
