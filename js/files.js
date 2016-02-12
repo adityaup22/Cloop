@@ -40,7 +40,7 @@ function myFunction(xml) {
     "</a></td><td>" +
     file[i].getElementsByTagName("OWNER")[0].childNodes[0].nodeValue + "</td><td>" +
 	file[i].getElementsByTagName("MODIFIED")[0].childNodes[0].nodeValue +"</td><td>" +
-	 file[i].getElementsByTagName("SIZE")[0].childNodes[0].nodeValue +"</td><td> <i class='fa fa-download fa-lg file-option' data-toggle='tooltip' data-placement='top' title='Download'></i></td><td><i class='fa fa-trash fa-lg file-option' data-toggle='tooltip' data-placement='top' title='Delete'></i></td></tr>"
+	 file[i].getElementsByTagName("SIZE")[0].childNodes[0].nodeValue +"</td><td><a href='handel.php?"+file[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue+"'><i class='fa fa-download fa-lg file-option' data-toggle='tooltip' data-placement='top' title='Download'></i></a></td><td><a href='handle.php?'"+file[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue+"><i class='fa fa-trash fa-lg file-option' data-toggle='tooltip' data-placement='top' title='Delete'></i></td></tr>"
 	 
 	 }//end of if
 	
@@ -53,7 +53,7 @@ function myFunction(xml) {
     "</a></td><td>" +
     file[i].getElementsByTagName("OWNER")[0].childNodes[0].nodeValue + "</td><td>" +
 	file[i].getElementsByTagName("MODIFIED")[0].childNodes[0].nodeValue +"</td><td>" +
-	 file[i].getElementsByTagName("SIZE")[0].childNodes[0].nodeValue+"</td><td>   <i class='fa fa-download fa-lg file-option' data-toggle='tooltip' data-placement='top' title='Download'></i></td><td><i class='fa fa-trash fa-lg file-option' data-toggle='tooltip' data-placement='top' title='Delete'></i> </td></tr>"
+	 file[i].getElementsByTagName("SIZE")[0].childNodes[0].nodeValue+"</td><td> <a href='handel.php?"+file[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue+"'>  <i class='fa fa-download fa-lg file-option' data-toggle='tooltip' data-placement='top' title='Download'></i></a></td><td><a href='handel.php?"+file[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue+"'><i class='fa fa-trash fa-lg file-option' data-toggle='tooltip' data-placement='top' title='Delete'></i></a> </td></tr>"
 		 }//end of elseif
   		}//end of for loop
   document.getElementById("file").innerHTML = table;
