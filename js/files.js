@@ -33,21 +33,7 @@ function myFunction(xml) {
   for (i = 0; i <file.length; i++) { 
   	
   	if(file[i].getElementsByTagName('TYPE')[0].childNodes[0].nodeValue ==="File"){
-<<<<<<< HEAD
-<<<<<<< HEAD
     table += "<tr><td ><a href='"+ file[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue+"'><i class='fa fa-file'></i> " +
-=======
-<<<<<<< HEAD
-    table += "<a><tr><td ><i class='fa fa-file fa-fw fa-lg'></i><a class='filelist' id="+file[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue+"> " +
-=======
-    table += "<tr><td ><a href='#'><i class='fa fa-file'></i> " +
->>>>>>> origin/master
->>>>>>> 109052557d479ecd0b3fe6e0d775c7a8907672ec
-=======
-
-    table += "<tr><td ><a href='#'><i class='fa fa-file fa-fw fa-lg'></i> " +
-
->>>>>>> 75c903bc744d8e89499a7847c2ad5b994814bcc0
     file[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
     "</a></td><td>" +
     file[i].getElementsByTagName("OWNER")[0].childNodes[0].nodeValue + "</td><td>" +
