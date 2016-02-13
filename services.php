@@ -105,16 +105,16 @@ confirm_logged_in();
 
 
 
-<button  class="click" id="one" data-toggle="modal" data-target="#myModal2">Softwares</button>
+<a href="http://127.0.0.1/Cloop/software.php"><button  class="click" id="one">Softwares</button></a>
 
 
-<button class="click" id="two" data-toggle="modal" data-target="#myModal">Storage</button>
+<a href="http://127.0.0.1/Cloop/storage.php"><button class="click" id="two" >Storage</button></a>
 
 
-<button class="click" id="three" data-toggle="modal" data-target="#myModal3">Infrastructure</button>
+<a href="http://127.0.0.1/Cloop/instance.php"><button class="click" id="three" >Infrastructure</button></a>
 
 
-<button class="click" id="four" data-toggle="modal" data-target="#myModal4">Hadoop</button>
+<a href="http://127.0.0.1/Cloop/cluster.php"><button class="click" id="four" >Hadoop</button></a>
 
 
 <!-- Modal --------------------------   staas---------------------------->
@@ -147,133 +147,9 @@ confirm_logged_in();
   </div>
 </div>
 
-<!-- Modal -------------------------  for saas---------------------->
-<div id="myModal2" class="modal  fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Please Click On the required software</h4>
-      </div>
-      <div class="modal-body">
-        	<form>
-            <a><img src="images/firefox-512.png">
-           <caption>FireFox</caption></a>
-           <a>
-           <img src="images/Google-Chrome-Logo.png">
-           <caption>Google Chrome</caption></a>
-            <a>
-            <img src="images/gedit.png">
-           <caption>Gedit Editor</caption></a>
-           <a>
-           <img src="images/Libre-Office (1).png">
-           <caption>Libre Office</caption></a>
-            </form>
-      </div>
-     
-    </div>
-
-  </div>
-</div>
 
 
-<!-- Modal -------------------------  for iaas---------------------->
-<div id="myModal3" class="modal fade" role="dialog">
-  <div class="modal-dialog">
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Please select the apropriate Flavour. </h4>
-      </div>
-      <div class="modal-body">
-        	<div class="container-fluid">
-  
-  <form action="/cgi-bin/installing_instance.py?user=<?php echo $_SESSION['username'] ?>" method="post">
-        	<div class="form-group">
- 
-  <label  for="sel2">Select OS</label>
-  <select name="os" class="form-control" id="sel2">
-    <option value="Centos">CentOS </option>
-    <option value="Mint">Mint</option>
-    <option value="Ubuntu">Ubuntu</option>
-    <option value="Fedora">Fedora</option>
-    
-  </select>
-  <br/>
-  
-  <label for="os_name">Name</label>
-
-  <input type="text" placeholder="Enter the name for the OS" class="form-control" name="name" />
-  
-</div>
-
-
-  
-  
-        <h2>Flavours</h2>      
-  <table class="table table-hover">
-    <thead>
-      <tr>
-      	<th>Select</th>
-        <th>Flavour</th>
-        <th>RAM</th>
-        <th>Disk</th>
-        <th>CPU</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-      	<td><input type="radio" name="option" value="xsmall" checked /></td>
-        <td>xSmall</td>
-        <td>1 GB</td>
-        <td>100 Gb</td>
-        <td>1</td>
-      </tr>
-     <tr>
-     	<td><input type="radio" name="option" value="small" /></td>
-        <td>Small</td>
-        <td>2.5 GB</td>
-        <td>250 Gb</td>
-        <td>2</td>
-      </tr>
-      <tr>
-      	<td><input type="radio" name="option"  value="medium" /></td>
-        <td>Medium</td>
-        <td>4 GB</td>
-        <td>500 Gb</td>
-        <td>4</td>
-      </tr>
-      <tr>
-      	<td><input type="radio" name="option"  value="large" /></td>
-        <td>Large</td>
-        <td>8 GB</td>
-        <td>750 Gb</td>
-        <td>4</td>
-      </tr>
-      <tr>
-      	<td><input type="radio"  name="option" value="xlarge" /></td>
-        <td>xLarge</td>
-        <td>16 GB</td>
-        <td>1000 Gb</td>
-        <td>8</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<input type="submit" name="submit" value="Submit" class="btn btn-primary btn-block">
-		
-		</form>
-      </div>
-     
-    </div>
-
-  </div>
-</div>
 
 <!-- Modal --------------------------   Hadoop---------------------------->
 <div id="myModal4" class="modal fade" role="dialog">

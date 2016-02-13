@@ -40,7 +40,7 @@
 <!-------------------  filedetails--------------------->
 <div class="container-fluid">
 
-<table class="table  table-responsive" id="file" ></table>
+<table class="table table-hover table-responsive" id="file" ></table>
   
 
 </div>
