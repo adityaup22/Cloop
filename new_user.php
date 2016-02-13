@@ -39,11 +39,14 @@ elseif($result1){
 $query2= "SELECT id,username FROM user WHERE username='{$username}' AND password='{$hashed_password}' LIMIT 1";
 $result2=mysql_query($query2,$connection);
 if(!$result2)
-die("Query 2 Failed.".mysql_error());
+//die("Query 2 Failed.".mysql_error());
+{header("Location:handler.php?error=1");
+	exit;}
+
 $found_user=mysql_fetch_array($result2);
 $_SESSION['user_id']=$found_user['id'];
 $_SESSION['username']=$found_user['username'];
-header("Location:error.php?success=1");
+header("Location:http://127.0.0.1/cgi-bin/initial_proc.py?user={$_SESSION['username']}");
 exit;
 }
 }

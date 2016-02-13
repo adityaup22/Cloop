@@ -84,6 +84,14 @@ if(isset($_GET['error']))
 
 
 
+if(isset($_GET['user_created']))
+{
+	$_SESSION['user_created']=$_GET['user_created'];
+	header("Location:home.php");
+}
+
+
+
 
 
 

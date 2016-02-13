@@ -65,6 +65,19 @@
     
 			}
 	
+	if(isset($_SESSION['user_created']))
+			{
+			echo "
+			<div class='alert alert-success fade in myclass' id='msg'>
+			<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+			<strong>Welcome Aboard {$_SESSION['user_created']} !!</strong>
+			</div>";
+			unset($_SESSION['user_created']);
+    
+			}
+	
+	
+	
 	if(isset($_SESSION['error']))
 			{
 			echo "
