@@ -3,17 +3,20 @@
 <?php 
 session_start();
 
+
+if(isset($_GET['user_present']))
+{
+	$_SESSION['user_present']=1;
+	header("Location:home.php");
+}
+
+
 //No INstacne Selected
 
 if(isset($_GET['not_selected']))
 {
 	$_SESSION['not_selected']=1;
-	
-	
 	header("Location:instance.php");
-
-
-	
 }
 
 //Not Logged In
@@ -71,6 +74,14 @@ if(isset($_GET['instance_already']))
 	$_SESSION['instance_already']=$_GET['instance_already'];
 	header("Location:services.php");
 }
+
+
+if(isset($_GET['error']))
+{
+	$_SESSION['error']=1;
+	header("Location:home.php");
+}
+
 
 
 

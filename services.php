@@ -105,16 +105,16 @@ confirm_logged_in();
 
 
 
-<a href="http://127.0.0.1/Cloop/software.php"><button  class="click" id="one">Softwares</button></a>
+<a href="software.php"><button  class="click" id="one">Softwares</button></a>
 
 
-<a href="http://127.0.0.1/Cloop/storage.php"><button class="click" id="two" >Storage</button></a>
+<a href="storage.php"><button class="click" id="two" >Storage</button></a>
 
 
-<a href="http://127.0.0.1/Cloop/instance.php"><button class="click" id="three" >Infrastructure</button></a>
+<a href="instance.php"><button class="click" id="three" >Infrastructure</button></a>
 
 
-<a href="http://127.0.0.1/Cloop/cluster.php"><button class="click" id="four" >Hadoop</button></a>
+<a href="cluster.php"><button class="click" id="four" >Hadoop</button></a>
 
 
 <!-- Modal --------------------------   staas---------------------------->

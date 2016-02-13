@@ -18,11 +18,11 @@ if($password != $confirm_password){
 	exit;
 	}
 //Checking User In database	
-$query= "SELECT * FROM user WHERE username='{$username}' AND password='{$hashed_password}' LIMIT 1";
+$query= "SELECT * FROM user WHERE username='{$username}' LIMIT 1";
 $result=mysql_query($query,$connection);
 $user=mysql_fetch_array($result);
 if($user)
-{	header("Location:error.php?user=1");
+{	header("Location:handler.php?user_present=1");
 	exit;
 	}
 
@@ -31,7 +31,10 @@ $query1= "INSERT INTO user (username,email,password)
           VALUES ('{$username}','{$email}','{$hashed_password}' ) ";
 $result1=mysql_query($query1,$connection);
 if(!$result1)
-die("Query Failed".mysql_error());
+//die("Query Failed".mysql_error());
+{header("Location:handler.php?error=1");
+	exit;}
+
 elseif($result1){
 $query2= "SELECT id,username FROM user WHERE username='{$username}' AND password='{$hashed_password}' LIMIT 1";
 $result2=mysql_query($query2,$connection);

@@ -53,6 +53,32 @@
 			unset($_SESSION['failure_login']);
     
 			}
+	
+	if(isset($_SESSION['user_present']))
+			{
+			echo "
+			<div class='alert alert-success fade in myclass' id='msg'>
+			<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+			<strong>User already present, try another !!</strong>
+			</div>";
+			unset($_SESSION['user_present']);
+    
+			}
+	
+	if(isset($_SESSION['error']))
+			{
+			echo "
+			<div class='alert alert-success fade in myclass' id='msg'>
+			<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+			<strong>Something is not right,try later !!</strong>
+			</div>";
+			unset($_SESSION['error']);
+    
+			}
+			
+	
+			
+			
   ?>
   
 
