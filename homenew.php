@@ -7,8 +7,13 @@
 <link rel="stylesheet" href="css/bootstrap.css" />
 <link rel='stylesheet' href='font-awesome/css/font-awesome.css'/>
 <link rel="stylesheet" href="css/homenew.css"/>
+<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
+
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+
 <script src="js/homenew.js"></script>
 </head>
 
@@ -37,7 +42,7 @@
 </nav>
 <!----------------------------------------------navigation over--------------------->
 <div class="jumbotron text-center">
-	<h1>Infamous Cloud <i class="fa fa-cloud"></i></h1>
+	<h1>Infamous Cloud <i class="fa fa-cloud slideanim"></i></h1>
     
     <p>The Cloud against amazon</p>
     <form class="form-inline">
@@ -58,7 +63,7 @@
   
   </div>
   <div class="col-sm-4">
-  	<i class="fa fa-cloud logo"></i>
+  	<i class="fa fa-cloud logo slideanim"></i>
   </div><!--//row-->
 </div><!------------ ------------------------------------container luid1--------->
 
@@ -68,7 +73,7 @@
 
 <div class="row">
 <div class="col-sm-4">
-	<i class=" glyphicon glyphicon-fire logo"></i>
+	<i class=" glyphicon glyphicon-fire logo slideanim"></i>
 </div>
 <div class="col-sm-8">
 <h2>How are we unique</h2>
@@ -85,22 +90,22 @@
 
 <br>
   <div class="row">
-    <div class="col-sm-3">
+    <div class="col-sm-3 slideanim">
       <i class=" glyphicon glyphicon-hdd logo-small"></i>
       <h4>StorageBox</h4>
       <p>Store Everything.Access anywhere</p>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-3 slideanim">
       <i class="fa fa-code logo-small"></i>
       <h4>Applications</h4>
       <p>Enterprise Applicaions on pay per use</p>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-3 slideanim">
       <i class="fa fa-desktop logo-small"></i>
       <h4>Inctances</h4>
       <p>Your Operating systems</p>
     </div>
-    <div class="col-sm-3 ">
+    <div class="col-sm-3 slideanim">
       <i class=" glyphicon glyphicon-tasks logo-small"></i>
       <h4>EzCluster</h4>
       <p>Your own Hadoop Cluster</p>
@@ -110,22 +115,22 @@
      <br><br>
  
   <div class="row">
-  <div class="col-sm-3">
+  <div class="col-sm-3 slideanim">
       <span class=" fa fa-shield logo-small"></span>
       <h4>Speed</h4>
       <p>Experience the ultimate speed</p>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-3 slideanim">
       <span class="glyphicon glyphicon-leaf logo-small"></span>
       <h4>Green</h4>
       <p>Everything digital means an less use of paper</p>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-3 slideanim">
       <span class="glyphicon glyphicon-certificate logo-small"></span>
       <h4>Security</h4>
       <p>Cloud was never so secure</p>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-3 slideanim">
       <span class="glyphicon glyphicon-check logo-small"></span>
       <h4>Up to date</h4>
       <p>All the Softwares and OS are up to date.</p>
@@ -140,28 +145,28 @@
   <h4>What we have created</h4>
   <div class="row text-center">
     <div class="col-sm-3">
-      <div class="thumbnail">
+      <div class="thumbnail slideanim">
         <img src="images/instances.jpg" alt="Paris">
         <p><strong>Software</strong></p>
         <p>Yes, it is on demand</p>
       </div>
     </div>
     <div class="col-sm-3">
-      <div class="thumbnail">
+      <div class="thumbnail slideanim">
         <img src="images/instances.jpg" alt="New York">
         <p><strong>Storage Box</strong></p>
         <p>All Files are here. </p>
       </div>
     </div>
     <div class="col-sm-3">
-      <div class="thumbnail">
+      <div class="thumbnail slideanim">
         <img src="images/instances.jpg" alt="San Francisco">
         <p><strong>Instance</strong></p>
         <p>Running OS on your browser</p>
       </div>
      </div>
      <div class="col-sm-3">
-      <div class="thumbnail">
+      <div class="thumbnail slideanim">
         <img src="images/cluster.jpg" alt="San Francisco">
         <p><strong>Instance</strong></p>
         <p>Running OS on your browser</p>
@@ -180,7 +185,7 @@
   </div>
   <div class="row">
     <div class="col-sm-4">
-      <div class="panel panel-default text-center">
+      <div class="panel panel-default text-center slideanim">
         <div class="panel-heading">
           <h1>Basic</h1>
         </div>
@@ -199,7 +204,7 @@
       </div> 
     </div> 
     <div class="col-sm-4">
-      <div class="panel panel-default text-center">
+      <div class="panel panel-default text-center slideanim">
         <div class="panel-heading">
           <h1>Pro</h1>
         </div>
@@ -215,7 +220,7 @@
       </div> 
     </div> 
    <div class="col-sm-4">
-      <div class="panel panel-default text-center">
+      <div class="panel panel-default text-center slideanim">
         <div class="panel-heading">
           <h1>Premium</h1>
         </div>
@@ -234,6 +239,43 @@
 </div>
 
 <!--------------------------------------------pricing corner------------------------------>
+
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Jaipur ,India</p>
+      <p><span class="glyphicon glyphicon-phone"></span>+91 7597208375</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>infamouscloud@gmail.com</p> 
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group slideanim">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group slideanim">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group slideanim">
+          <button class="btn btn-primary pull-right" type="submit">Send</button>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+
+<!-- Set height and width with CSS -->
+<div id="googleMap" style="height:400px;width:100%;"></div>
+
+
+
+
+
+<!------------------------------------------------ contact --------------------------------------------->
 
 
 <footer class="container-fluid text-center">
