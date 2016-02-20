@@ -108,7 +108,7 @@ confirm_logged_in();
 <a href="software.php"><button  class="click" id="one">Softwares</button></a>
 
 
-<a href="storage.php"><button class="click" id="two" >Storage</button></a>
+<a href="storage.php"><button onclick=<?php echo "\"initial_proc('{$_SESSION['username']}')\"";?>  class="click" id="two" >Storage</button></a>
 
 
 <a href="instance.php"><button class="click" id="three" >Infrastructure</button></a>

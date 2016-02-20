@@ -12,7 +12,7 @@ function loadthis() {
       myFunction(xhttp);
     }
   };
-	xhttp.open("GET","ajaxfiles/test_files.xml", true);//file managed by python dev
+	xhttp.open("GET","http://127.0.0.1/cgi-bin/test_files.py", true);//file managed by python dev
 
   xhttp.send();
 }

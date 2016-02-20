@@ -254,7 +254,7 @@
                 <input type='password' class='form-control' required name='cpwd' id='cpwd'>
             </div>
             </div>
-            <input type='submit' name='signup' class='btn btn-success btn-block'>
+            <input type='submit' name='signup' value="Sign Up" class='btn btn-success btn-block'>
 		</form>
       </div>
      

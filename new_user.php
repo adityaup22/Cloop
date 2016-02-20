@@ -46,7 +46,7 @@ if(!$result2)
 $found_user=mysql_fetch_array($result2);
 $_SESSION['user_id']=$found_user['id'];
 $_SESSION['username']=$found_user['username'];
-header("Location:http://127.0.0.1/cgi-bin/initial_proc.py?user={$_SESSION['username']}");
+header("Location:handler.php?user_created={$username}");
 exit;
 }
 }
