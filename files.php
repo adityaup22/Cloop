@@ -1,3 +1,7 @@
+<?php
+require_once("session.php");
+confirm_logged_in();
+ ?>
 <!doctype html>
 <html>
 <head>
@@ -21,7 +25,7 @@
 
 
 </head>
-<body onLoad="loadthis()" >
+<body onchange=<?php echo "\"loadthis('{$_SESSION['username']}')\"";?>  onLoad=<?php echo "\"loadthis('{$_SESSION['username']}')\"";?> >
 
 
 

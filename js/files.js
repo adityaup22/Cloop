@@ -1,8 +1,22 @@
+function loadthis(user) {
+	
+  var xhttp = new XMLHttpRequest();
+  var username= user;
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+     
+      myFunction(xhttp);
+    }
+  };
+	alert("filesxml")
+	xhttp.open("GET","http://127.0.0.1/cgi-bin/creatingxml.py?user="+user, true);//file managed by python dev
+	
 
+  xhttp.send();
+  loadthis1(username);
+}
 
-
-
-function loadthis() {
+function loadthis1(user) {
 	
   var xhttp = new XMLHttpRequest();
   
@@ -12,11 +26,12 @@ function loadthis() {
       myFunction(xhttp);
     }
   };
-	xhttp.open("GET","http://127.0.0.1/cgi-bin/test_files.py", true);//file managed by python dev
+	alert("filesxml1")
+
+	xhttp.open("GET","ajaxfiles/"+user+"_files.xml", true);//file managed by python dev
 
   xhttp.send();
 }
-
 
 
 
