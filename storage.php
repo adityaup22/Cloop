@@ -18,7 +18,7 @@ confirm_logged_in();
 
 </head>
 
-<body>
+<body onclick=<?php echo "\"refresh_contents('{$_SESSION['username']}')\"";?>>
 
 <div id='wrapper'>
 <!--------------------              Top Navigation           ---------------------->
@@ -197,9 +197,9 @@ confirm_logged_in();
                       <ul class="nav myul"> 
                       <li><br/></li>
                       <li><button class="btn file-upload"  data-toggle='modal' data-target="#myModal" data-backdrop="static"><i class='fa fa-fw  fa-folder'></i>Create Folder</button></li>
-                      <li><br/></li>
+                      <li><br/></li><form action='' id='' method='post'>
                      <li><div class="newfile-div"><i class="fa fa-file"></i>Upload<input type="file" class="newfile"></li></div>
-
+						</form>
                       </ul>
                       </div></div>
                             
