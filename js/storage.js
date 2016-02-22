@@ -23,5 +23,10 @@ $(function(){
 				}//end of else
 			
 		});
+		
+		
+	$("#newfile").change(function(){
+			$("#new").submit();
+		});
 	
 	})//main funtion

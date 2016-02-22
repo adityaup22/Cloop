@@ -163,7 +163,7 @@ confirm_logged_in();
                         <a href='#'><i class='fa fa-fw  fa-folder-open'></i> My Box</a>
                     </li>
                     <li>
-                        <a href='services.php'><i class='fa fa-fw fa-users'></i> Shared With me</a>
+                        <a href='#'><i class='fa fa-fw fa-users'></i> Shared With me</a>
                     </li>
                     <li>
                         <a href='#'><i class='glyphicon glyphicon-trash'></i> DustBin</a>
@@ -189,7 +189,7 @@ confirm_logged_in();
 
 
 <!-------------new file , folder division----------------------->
-<div class="mycontainer container-fluid ">
+<div class="mycontainer container-fluid text-center " >
 
       
                       
@@ -198,11 +198,13 @@ confirm_logged_in();
                       <li><br/></li>
                       <li><button class="btn file-upload"  data-toggle='modal' data-target="#myModal" data-backdrop="static"><i class='fa fa-fw  fa-folder'></i>Create Folder</button></li>
                       <li><br/></li>
-                     <li><div class="newfile-div"><i class="fa fa-file"></i>Upload<input type="file" class="newfile"></li></div>
+                      <form id="new">
+                     <li><div class="newfile-div"><i class="fa fa-file"></i>Upload<input type="file" id="newfile" class="newfile"></li></div>
 
                       </ul>
+                      </form>
                       </div></div>
-                            
+                           
                 
 </div>
 <!------------------------newfile,folder division end------------>
