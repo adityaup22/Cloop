@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS File Upload with Progress</title>
+    <style>
+    .container {
+        width: 500px;
+        margin: 0 auto;
+    }
+    .progress_outer {
+        border: 1px solid #000;
+    }
+    
+    </style>
+ <link rel='stylesheet' href='css/bootstrap.css' />
+<link rel='stylesheet' href='css/sb-admin.css' />
+<link rel='stylesheet' href='font-awesome/css/font-awesome.css'/>
+<link rel='stylesheet' href='css/instance.css' />
+<script src='js/jquery.js'></script>
+<script src='js/instance.js'></script>
+<script src='js/bootstrap.js'></script>
+</head>
+<body>
+    <div class='container'>
+        <p>
+            Select File: <input type='file' id='_file'> <input type='button' id='_submit' value='Upload!'>
+        </p>
+        <div class='progress_outer'>
+        <div  class="progress">
+  <div id="_progress" class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
+  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
+    <p id='pbar'>Uploading</p>
+  </div>
+        </div>
+    <script src='upload.js'></script>
+</body>
+</html>
