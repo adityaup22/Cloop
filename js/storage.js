@@ -42,7 +42,7 @@ function refresh_contents(user) {
       myFunction(xhttp);
     }
   };
-	alert("filesxml1")
+	alert("refresh contents");
 
 	xhttp.open("GET","http://127.0.0.1/cgi-bin/refresh_contents.py?user="+user, true);//file managed by python dev
 

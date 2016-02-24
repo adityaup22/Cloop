@@ -25,7 +25,7 @@ confirm_logged_in();
 
 
 </head>
-<body onchange=<?php echo "\"loadthis('{$_SESSION['username']}')\"";?>  onLoad=<?php echo "\"loadthis('{$_SESSION['username']}')\"";?> >
+<body onchange=<?php echo "\"loadthis('{$_SESSION['username']}')\"";?> >
 
 
 
