@@ -255,7 +255,7 @@ confirm_logged_in();
       	
         <div class="container">
 <!-- The file upload form used as target for the file upload widget -->
-    <form id="fileupload" action="" method="POST" enctype="multipart/form-data">
+    <form id="fileupload" action="http://127.0.0.1/Cloop/server/php/UploadHandler.php" method="POST" enctype="multipart/form-data">
         <!-- Redirect browsers with JavaScript disabled to the origin page -->
         <noscript><input type="hidden" name="redirect" value="https://blueimp.github.io/jQuery-File-Upload/"></noscript>
         <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
@@ -273,6 +273,9 @@ confirm_logged_in();
                
                 <span class="fileupload-process"></span>
             </div>
+            
+            
+            
             <!-- The global progress state -->
             <div class="col-lg-4 fileupload-progress fade">
                 <!-- The global progress bar -->
@@ -286,6 +289,7 @@ confirm_logged_in();
         <div class="row">
         <!-- The table listing the files available for upload/download -->
         <div class="col-md-9">
+        <h2 class="text-center" id="drop-text"><i class="fa fa-arrow-circle-o-down"></i> Drop here....</h2>
         <table role="presentation" class="table table-striped table-responsive mytable"><tbody class="files"></tbody></table>
     </div>
     </div>
@@ -307,8 +311,10 @@ confirm_logged_in();
 
 <div id="initial-loader" class="text-center">
 	<br/>
-    <br/><br/><br/><br/><br/><br/><br/>
-	<img src="images/loading.gif" />
+    <br/><br/><br/><br/><br/><br/>
+    
+    <br/>
+	<h3  style="color:#fff;">Loading...</h3><img src="images/gears.gif" />
 
 </div>
 
@@ -321,6 +327,13 @@ $(function(){
 		//alert("ddd");
 		$("#myModal2").modal('show');
 				});
+				
+	$('#fileupload')
+    .bind('fileuploadadd', function (e, data) {
+			$("#drop-text").fadeOut(1000);
+		})			
+	
+				
 	});
 
 
@@ -358,8 +371,10 @@ $(function(){
 {% } %}
 </script>
 <!-- The template to display files available for download -->
+
+
 <script id="template-download" type="text/x-tmpl">
-{% for (var i=0, file; file=o.files[i]; i++) { %}
+/*{% for (var i=0, file; file=o.files[i]; i++) { %}
     <tr class="template-download fade">
         <td>
             <span class="preview">
@@ -399,7 +414,7 @@ $(function(){
         </td>
     </tr>
 {% } %}
-</script>
+*/</script>
 
 
 

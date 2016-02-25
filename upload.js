@@ -29,7 +29,11 @@ var upload = function(){
 
     request.upload.addEventListener('progress', function(e){
         _progress.style.width = Math.ceil(e.loaded/e.total) * 100 + '%';
+<<<<<<< HEAD
         
+=======
+       // document.getElementById('pbar').innerHTML=Math.ceil(e.loaded/e.total) * 100 + '%';
+>>>>>>> c456fed363836c14f76f0e0049f2cf68f5b102cd
     }, false);
 
     request.open('POST', 'upload.php');
