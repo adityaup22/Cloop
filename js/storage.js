@@ -24,10 +24,17 @@ $(function(){
 			
 		});
 		
-		
+	/*	
 	$("#newfile").change(function(){
-			$("#new").submit();
-		});
+			//$("#new").submit();
+			$("#myModal2").modal('show');
+			file.hide();
+		});*/
+		
+	
+	$("#new-folder").click(function(){
+			file.hide();
+		})
 	
 	})//main funtion
 
