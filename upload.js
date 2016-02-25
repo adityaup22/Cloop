@@ -10,12 +10,13 @@ var upload = function(){
 
     var data = new FormData();
     data.append('SelectedFile', _file.files[0]);
-
+	alert("ok");
     var request = new XMLHttpRequest();
     request.onreadystatechange = function(){
         if(request.readyState == 4){
             try {
                 var resp = JSON.parse(request.response);
+				alert(resp);
             } catch (e){
                 var resp = {
                     status: 'error',
@@ -28,7 +29,7 @@ var upload = function(){
 
     request.upload.addEventListener('progress', function(e){
         _progress.style.width = Math.ceil(e.loaded/e.total) * 100 + '%';
-        document.getElementById('pbar').innerHTML=Math.ceil(e.loaded/e.total) * 100 + '%';
+        
     }, false);
 
     request.open('POST', 'upload.php');

@@ -20,7 +20,7 @@ confirm_logged_in();
 </head>
 
 
-<body >
+<body onload=<?php echo "\"test('{$_SESSION['username']}')\"";?> >
 <div id='wrapper'>
 <!--------------------              Top Navigation           ---------------------->
 	
@@ -262,71 +262,20 @@ confirm_logged_in();
                <table class="table table-bordered   table-hover table-responsive mytable" id="instancetable">
                
                
-               <br>
-               <th></th>
-               <th>Name</th>
-               <th>IP Address</th>
-               <th>Ram</th>
-               <th>Disk</th>
-               <th>Status</th>
-               <?php
-                         
-               $query= "SELECT * FROM instance WHERE username='{$_SESSION['username']}' ";
-				$result=mysql_query($query,$connection);
-				while($user=mysql_fetch_array($result))
-					 {
-                $id=$user['id'];
-                $os=$user['os'];
-				$ram=$user['ram'];
-				$disk=$user['disk'];
-                
-                echo "<tr>";
-               
-               	echo "<td><input type=\"radio\" name=\"os_name\" form=\"iform\" value=\"{$os}\"></td>";
-               	echo "<td> {$os}</td>";
-                echo "<td></td>";
-                echo "<td>{$ram}</td>";
-                echo "<td>{$disk}</td>";
-                echo "<td>Running</td>";
-			}
-                ?>
+              
           <!--      <td><div class="progress">
   <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
   aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
     80% Building
   </div></td>   -->
       <!--this progress bar can be displayed when instance is building and its progress can be varied by changing its "width" so it must be managed by the script and continuously script must be triggred to check the progress and width must be adjusted... --->
-               </tr>
+              
                
                
                
-               <!--
-				    <?php 
-				/*   // If  INstance Available then,,
-				  $query= "SELECT * FROM instance WHERE username='{$_SESSION['username']}' ";
-				$result=mysql_query($query,$connection);
-				while($user=mysql_fetch_array($result))
-					 {
-						 $os=$user['os'];
-						 $ram=$user['ram'];
-						 $disk=$user['disk'];
-						echo "<tr>";
-						echo "<td>{$os}</td>";
-						echo "<td>{$ram}</td>";
-						echo "<td>{$disk}</td>";
-						echo "<td><a href=\"/cgi-bin/proxy.py\"  class='btn-primary launch'>Launch Instance</a></td>";
-						echo "</tr>";
-						
-					 }
-					 // If No INstance Available then,,
-					 if(!isset($os))
-						echo "<h1 class=\"page-header\" id=\"head\">No Instances Available. </h1>";
-		
-					 */ ?>
-				  
-               -->
                
-               </table>
+               
+                </table>
                 </div> 
                 <!----------------------------------- /.table---------------------> 
 

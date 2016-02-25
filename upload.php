@@ -13,9 +13,9 @@ if($_FILES['SelectedFile']['error'] > 0){
     outputJSON('An error ocurred when uploading.');
 }
 
-if(!getimagesize($_FILES['SelectedFile']['tmp_name'])){
+/*if(!getimagesize($_FILES['SelectedFile']['tmp_name'])){
     outputJSON('Please ensure you are uploading an image.');
-}
+}*/
 
 
 
