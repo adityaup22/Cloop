@@ -253,9 +253,13 @@ confirm_logged_in();
       </div>
       <div class='modal-body'>
       	
-        <div class="container">
+        <div class="container" id="fileupload">
 <!-- The file upload form used as target for the file upload widget -->
+<<<<<<< HEAD
     <form id="fileupload" action="upload.php" method="POST" enctype="multipart/form-data">
+=======
+    
+>>>>>>> 6134878ed832e35afd53cb76a6e5089677cbf655
         <!-- Redirect browsers with JavaScript disabled to the origin page -->
         <noscript><input type="hidden" name="redirect" value="https://blueimp.github.io/jQuery-File-Upload/"></noscript>
         <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
@@ -293,7 +297,7 @@ confirm_logged_in();
         <table role="presentation" class="table table-striped table-responsive mytable"><tbody class="files"></tbody></table>
     </div>
     </div>
-    </form>
+    
 
 </div><!----------------------  container end-------------->
         
@@ -425,12 +429,10 @@ $(function(){
 <script src="//blueimp.github.io/JavaScript-Templates/js/tmpl.min.js"></script>
 <!-- The Load Image plugin is included for the preview images and image resizing functionality -->
 <script src="//blueimp.github.io/JavaScript-Load-Image/js/load-image.all.min.js"></script>
-<!-- The Canvas to Blob plugin is included for image resizing functionality -->
-<script src="//blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>
-<!-- Bootstrap JS is not required, but included for the responsive demo navigation -->
 
 
-<script src="js/jquery.iframe-transport.js"></script>
+
+
 <!-- The basic File Upload plugin -->
 <script src="js/jquery.fileupload.js"></script>
 <!-- The File Upload processing plugin -->
