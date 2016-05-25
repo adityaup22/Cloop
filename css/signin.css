@@ -1,0 +1,55 @@
+body{
+	
+	background-color:#f8f8f8;}
+	
+.my-container-fluid{
+	
+	padding:160px 50px;
+	background-color:#3596BF;
+	background:no-repeat;
+		background-size:cover;
+		background-image:url(../images/architectural-157a.jpg);}
+form label, .btn-warning{
+	color:#fff;
+	font-family:Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+	font-weight:lighter;
+	font-size:18px;}
+
+ 
+.btn-link{
+	color:#fff;}
+
+.modal-content h2{color:#fff;
+font-weight:lighter;
+	font-family:Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+	}
+.modal-content label{
+	color:#1F3D5C;
+	font-weight:lighter;
+	font-family:Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+	}
+.btn-my{
+	background-color:#22b8eb;
+	color:#fff;}
+	
+.footer{
+	
+	font-family:font-family:Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+	color:black;
+	height:52px;
+	}
+
+@media (min-width:768px){
+	
+.my-container-fluid{
+		height:600px;
+		
+		padding:100px 0px;
+		padding-right:750px;
+		
+		
+	}
+.my-container-fluid .container{
+	width:400px;}
+	
+}
