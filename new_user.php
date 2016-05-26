@@ -8,11 +8,9 @@ $username=$_POST['username'];
 $email=$_POST['email'];
 $password=$_POST['pwd'];
 $confirm_password=$_POST['cpwd'];
-
-
 $hashed_password = md5($password);
 
-
+echo $username;
 if($password != $confirm_password){
 	header("Location:error.php?confirm=1");
 	exit;
@@ -31,7 +29,7 @@ $query1= "INSERT INTO user (username,email,password)
           VALUES ('{$username}','{$email}','{$hashed_password}' ) ";
 $result1=mysql_query($query1,$connection);
 if(!$result1)
-//die("Query Failed".mysql_error());
+die("Query Failed".mysql_error());
 {header("Location:handler.php?error=1");
 	exit;}
 

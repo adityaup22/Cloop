@@ -25,13 +25,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">ABOUT</a></li>
-        
-        
-        <li><a href="#contact">CONTACT</a></li>
-        <li class='active' ><a href="#" style="color:#22b8eb !important;">HELLO, SIGN IN</a></li>
+        <li><a href="homenew.php">HOME</a></li>
       </ul>
     </div>
   </div>
@@ -41,7 +35,7 @@
 		<div class="container">
         	<form  role="form" >
             	<div class="form-group-lg">
-                	<label for="id">Email</label>
+                	<label for="id">Username</label>
                     <input type="email" id="id" class="form-control">
                 </div>
                 <div class="form-group-lg">
