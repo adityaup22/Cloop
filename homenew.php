@@ -88,7 +88,7 @@
         <div class="row">
         	<div class="col-lg-12">
             <br/>
-            	<button class="btn btn-danger btn-lg" id="xp"  href="services.php">Sign Up for Cloud</button>
+            	<button class="btn btn-danger btn-lg" id="xp" data-toggle='modal' data-target='#signUpModal' data-backdrop='true' href="services.php">Sign Up for Cloud</button>
             </div>
         </div>
     </div>
