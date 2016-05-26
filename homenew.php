@@ -168,7 +168,7 @@
       <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group slideanim">
-          <button class="btn btn-primary pull-right" type="submit">Send</button>
+          <button class="btn btn-primary pull-right" id='send' type="submit">Send</button>
         </div>
       </div> 
     </div>
