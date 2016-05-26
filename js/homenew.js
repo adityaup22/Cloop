@@ -98,7 +98,7 @@ $(document).ready(function(){
 	  one.css('transform','scale(1.2,1.2)')
 		})*/
 	if (window.matchMedia('(max-width: 767px)').matches) {	
-		$('#send').removeClass('.pull-right');
+		$('#send').removeClass('pull-right');
 	}	
 		
 })
