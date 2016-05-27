@@ -97,7 +97,9 @@ $(document).ready(function(){
 		 one.css('transition','transform .5s');
 	  one.css('transform','scale(1.2,1.2)')
 		})*/
-		
+	if (window.matchMedia('(max-width: 767px)').matches) {	
+		$('#send').removeClass('pull-right');
+	}	
 		
 })
 
