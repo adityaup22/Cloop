@@ -152,7 +152,7 @@
   <div class="row">
     <div class="col-sm-5">
       <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Jaipur ,India</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Chudailon ka Mohalla, India</p>
       <p><span class="glyphicon glyphicon-envelope"></span>infamouscloud@gmail.com</p> 
     </div>
     <div class="col-sm-7">
@@ -195,7 +195,7 @@
         <h2 class="text-center"><span class='fa fa-user-plus'></span> SIGN UP </h2>
       </div>
       <div class='modal-body'>
-      	<form action='new_user.php' id='signup' method='GET'>
+      	<form action='new_user.php' id='signup' method='POST'>
         <div class='container-fluid'>
         	<div class='form-group'>
  				<label for='uname'>Full name:</label>

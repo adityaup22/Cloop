@@ -33,18 +33,18 @@
 <!----------------------------------------------navigation over--------------------->
 <div class="container-fluid my-container-fluid">
 		<div class="container">
-        	<form  role="form" >
+        	<form action="login.php" method="POST"  role="form" >
             	<div class="form-group-lg">
                 	<label for="id">Username</label>
-                    <input type="email" id="id" class="form-control">
+                    <input name="username" type="text" id="id" class="form-control">
                 </div>
                 <div class="form-group-lg">
                 	<label for="pwd">Password</label>
-                    <input type="password" id="pwd" class="form-control">
+                    <input name="password" type="password" id="pwd" class="form-control">
                 </div>
                 <br/>
                 <div class="form-group-lg text-center">
-                	<button type="submit" class="btn btn-lg btn-warning form-control">Sign In</button>
+                	<input type="submit" name="submit" value="Sign In" class="btn btn-lg btn-warning form-control">
                		<button type="button" class="btn btn-link" data-toggle='modal' data-target='#signUpModal' data-backdrop='true'>Not a member yet</button>
                     <button type="button" class="btn btn-link disabled">Forgot Password</button>
             	</div>
