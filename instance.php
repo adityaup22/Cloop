@@ -271,7 +271,7 @@ confirm_logged_in();
       <!--this progress bar can be displayed when instance is building and its progress can be varied by changing its "width" so it must be managed by the script and continuously script must be triggred to check the progress and width must be adjusted... --->
               
                
-               
+               <!--  Here Data Will Come From fetch_data.php which run on load of instance.php  -->
                
                
                
@@ -308,10 +308,11 @@ confirm_logged_in();
  
   <label  for="sel2">Select OS</label>
   <select name="os" class="form-control" id="sel2">
-    <option value="Centos">CentOS </option>
-    <option value="Mint">Mint</option>
-    <option value="Ubuntu">Ubuntu</option>
-    <option value="Fedora">Fedora</option>
+    <option value="CentOS-7-x86_64-DVD-1503-01.iso">CentOS </option>
+    <option value="rhel-server-7.0-x86_64-dvd.iso">Redhat</option>
+    <option value="ubuntu-15.04-desktop-i386.iso">Ubuntu</option>
+    <option value="linuxmint-11-gnome-dvd-32bit.iso">Mint</option>
+    <option value="kali-linux-2.0-amd64.iso">Kali</option>
     
   </select>
   <br/>
