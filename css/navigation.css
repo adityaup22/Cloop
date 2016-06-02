@@ -1,0 +1,38 @@
+.navbar {
+    margin-bottom: 0;
+    background-color: #134a6a;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 2.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+	
+	font-family: Montserrat, sans-serif;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+	
+}
+
+.navbar .navbar-brand{
+	transition:transform .5s;	
+	}
+	
+.navbar .navbar-brand:hover {
+		text-shadow:1px  #C2EBF6;
+		transform:scale(1.1,1.1);
+	}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #22b8eb !important;
+    background-color: #fff !important;
+}
+
+
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;}
+

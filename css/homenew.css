@@ -3,174 +3,136 @@ body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     color: #818181;
+	background-color:#f8f8f8;
 }
-h2 {
-      font-size: 24px;
-      text-transform: uppercase;
-      color: #303030;
-      font-weight: 600;
-      margin-bottom: 30px;
-  }
-  h4 {
-      font-size: 19px;
-      line-height: 1.375em;
-      color: #303030;
-      font-weight: 400;
-      margin-bottom: 30px;}
-
-.navbar {
-    margin-bottom: 0;
-    background-color: #134a6a;
-    z-index: 9999;
-    border: 0;
-    font-size: 12px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 4px;
-    border-radius: 0;
-	font-family: Montserrat, sans-serif;
-}
-
-.navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
-}
-
-.navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #f4511e !important;
-    background-color: #fff !important;
-}
-
-.navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;}
 
 
 .jumbotron{
-	background-color: #696969;
+	background-color:#454E52;
+	
 	font-family: Montserrat, sans-serif;
-	color:#ffffff;
-	padding: 200px 25px;}
+	color:#fff;
+	
+	padding:20px 50px;}
+
+
+.jumbotron h2{
+	color:#22b8eb;
+	letter-spacing: 2px;
+	font-family: Montserrat, sans-serif;
+	font-weight:lighter;
+	font-size:20px;}
+.jumbotron p{
+	color:#e6e7e8;
+	font-size: 14px;
+    line-height: 20px;
+	letter-spacing: 0.02rem;
+    font-weight:lighter;}
+
+.jumbotron .service_icon{
+	font-size:100px;
+	color:#22b8eb;}
+.jumbotron .intro_service{
+	
+	color:#fff;}
+.jumbotron .intro_service h1{
+	color:#fff;
+	letter-spacing: 4px;
+	font-family: Montserrat, sans-serif;
+	font-weight:lighter;
+	}
+
+	.jumbotron button{
+		border-radius:1px;}
+
+#intro_name{
+	
+	transition:transform 1s;
+	}
+
+.container-fluid h1{
+	font-size:56px;
+	}
+.container-fluid h1,p{
+	color:#1F3D5C;
+	font-weight:lighter;
+	font-family:Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", 
+
+"Cantarell", "Open Sans", sans-serif;
+	}
+.container-fluid p{
+	font-size:18px;}
+
+.container-fluid h2{
+	text-transform:uppercase;
+	font-size:24px;
+	color:#1F3D5C;
+	font-weight:lighter;}
+
+#about .row{
+	
+	padding-top:30px;}
+
+
+
+.icon{
+	color:#1F3D5C;
+	font-size:50px;
+	cursor:pointer;}
+.bg-white{
+	background-color:#fff;}
+
+
+
+#who hr{
+	border: 0;
+  border-top: 1px solid #22b8eb;}
 	
 
-.container-fluid{
-	padding:60px 50px ;
 
+#who .row{
+	padding-top:50px;}
+	
+#contact{
+	padding:50px 50px;}
+	
+.modal-content h2{color:#fff;
+font-weight:lighter;
+	font-family:Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", 
+
+"Cantarell", "Open Sans", sans-serif;
+	}
+.modal-content label{
+	color:#1F3D5C;
+	font-weight:lighter;
+	font-family:Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", 
+
+"Cantarell", "Open Sans", sans-serif;
+	}
+.btn-my{
+	background-color:#22b8eb;
+	color:#fff;}
+
+@media (min-width:768px){
+	.jumbotron{
+		height:600px;
+		background-image:url(../images/open_standards_image.png);}
+	#intro_name{
+	position:absolute;
+	top:30%;
+	left:30%;}
+	
+	.jumbotron .intro_service h1{
+		font-size:40px;
+		letter-spacing: 4px;}
+	.col-lg-3{
+		margin: 25px 0;}
+		
+		#about{
+	padding:0px 50px;
+	padding-bottom:30px;}
+#who{
+	padding:80px 150px;
+	padding-top:60px;}
 	
 	}
-.logo-small {
-    color: black;
-    font-size: 50px;
-}
-
-.logo {
-    color: black;
-    font-size: 200px;
-}
-@media screen and (max-width: 768px) {
-    .col-sm-4 {
-        text-align: center;
-        margin: 25px 0;
-    }
-}
-	
-.bg-grey{
-	background-color:#f6f6f6;}
-	
-.thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-}
-
-.thumbnail img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-}
-
-.panel {
-    border: 1px solid black; 
-    border-radius:0;
-    transition: box-shadow 0.5s;
-}
-
-.panel:hover {
-    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-}
-
-.panel-footer .btn:hover {
-    border: 1px solid #f4511e;
-    background-color: #fff !important;
-    color: #f4511e;
-}
-
-.panel-heading {
-    color: #fff !important;
-    background-color: black !important;
-    padding: 25px;
-    border-bottom: 1px solid transparent;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
-
-.panel-footer {
-    background-color: #fff !important;
-}
-
-.panel-footer h3 {
-    font-size: 32px;
-}
-
-.panel-footer h4 {
-    color: #aaa;
-    font-size: 14px;
-}
-
-.panel-footer .btn {
-    margin: 15px 0;
-    background-color: #f4511e;
-    color: #fff;
-}
-
-footer .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #f4511e;
-}
-
-
-
-.slideanim {visibility:hidden;}
-.slide {
-    /* The name of the animation */
-    animation-name: slide;
-    -webkit-animation-name: slide; 
-    /* The duration of the animation */
-    animation-duration: 1s; 
-    -webkit-animation-duration: 1s;
-    /* Make the element visible */
-    visibility: visible; 
-}
-
-/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
-@keyframes slide {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(70%);
-    } 
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0%);
-    } 
-}
-@-webkit-keyframes slide {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(70%);
-    } 
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0%);
-    }
-}

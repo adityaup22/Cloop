@@ -31,7 +31,7 @@ if(isset($_GET['not']))
 if(isset($_GET['logout']))
 {
 	$_SESSION['logout']=1;
-	header("Location:home.php");
+	header("Location:homenew.php");
 }
 
 //Wrong Credentials Provided
@@ -87,7 +87,7 @@ if(isset($_GET['error']))
 if(isset($_GET['user_created']))
 {
 	$_SESSION['user_created']=$_GET['user_created'];
-	header("Location:home.php");
+	header("Location:services.php");
 }
 
 
