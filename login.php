@@ -1,8 +1,8 @@
 <?php require_once("session.php")?>
 <?php require_once("connection.php")?>
-<?php# if(logged_in()){header("Location:index.php?already=1");exit; }?>
+
 <?php 
-if(isset($_POST['submit'])){
+
 $username=$_POST['username'];
 $password=$_POST['password'];
 
@@ -15,12 +15,15 @@ $_SESSION['user_id']=$found_user['id'];
 $_SESSION['username']=$found_user['username'];
 
 if($found_user){
-header("Location:services.php");
-exit;
+//header("Location:services.php");
+//exit;
+echo "true";
+
 }
 else{
-header("Location:handler.php?failure_login=1");
-exit;
+//~ header("Location:handler.php?failure_login=1");
+//~ exit;
+echo "false";
 }
-}
+
 ?>

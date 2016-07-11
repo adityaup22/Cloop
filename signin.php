@@ -8,6 +8,8 @@
 <link rel='stylesheet' href='font-awesome/css/font-awesome.css'/>
 <link rel='stylesheet' href="css/navigation.css" />
 <link rel="stylesheet" href="css/signin.css" />
+
+
 </head>
 
 <body>
@@ -33,7 +35,7 @@
 <!----------------------------------------------navigation over--------------------->
 <div class="container-fluid my-container-fluid">
 		<div class="container">
-        	<form action="login.php" method="POST"  role="form" >
+        	<form  method="POST"  role="form" >
             	<div class="form-group-lg">
                 	<label for="id">Username</label>
                     <input name="username" type="text" id="id" class="form-control">
@@ -44,7 +46,7 @@
                 </div>
                 <br/>
                 <div class="form-group-lg text-center">
-                	<input type="submit" name="submit" value="Sign In" class="btn btn-lg btn-warning form-control">
+                	<input type="submit" id="login" name="submit" value="Sign In" class="btn btn-lg btn-warning form-control">
                		<button type="button" class="btn btn-link" data-toggle='modal' data-target='#signUpModal' data-backdrop='true'>Not a member yet</button>
                     <button type="button" class="btn btn-link disabled">Forgot Password</button>
             	</div>
@@ -103,6 +105,62 @@
 
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
+<!--
+<script type='text/javascript'>
+	
+    /* attach a submit handler to the form */
+    $("#login").submit(function(event) {
+
+      /* stop form from submitting normally */
+      event.preventDefault();
+
+      /* get the action attribute from the <form action=""> element */
+      var $form = $( this ),
+          url = $form.attr( 'action' );
+
+      /* Send the data using post with element id name and name2*/
+      var posting = $.post( url, { username: $('#id').val(), password: $('#pwd').val() } );
+
+      /* Alerts the results */
+      posting.done(function( data ) {
+        alert('success');
+      });
+    });
+</script>
+-->
+
+<script>
+
+
+	
+$(function(){
+	
+	 $("#login").click(function(){
+		  
+		  username=$("#id").val();
+		  password=$("#pwd").val();
+		 
+		  $.ajax({
+			type: "POST",
+			url: "login.php",
+			data: "username="+username+"&password="+password,
+			success: function(html){    
+			if($.trim(html)=="true")    {
+			 //$("#add_err").html("right username or password");
+			window.location="services.php";
+			}
+			
+			
+		}
+		  });
+		return false;
+	});
+});
+
+</script>
+
+
+
 
 </body>
 </html>

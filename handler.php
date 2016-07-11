@@ -7,7 +7,7 @@ session_start();
 if(isset($_GET['user_present']))
 {
 	$_SESSION['user_present']=1;
-	header("Location:home.php");
+	header("Location:homenew.php");
 }
 
 
@@ -24,7 +24,7 @@ if(isset($_GET['not_selected']))
 if(isset($_GET['not']))
 {
 	$_SESSION['not']=1;
-	header("Location:home.php");
+	header("Location:homenew.php");
 }
 
 //Logged out Successfully
@@ -38,7 +38,7 @@ if(isset($_GET['logout']))
 if(isset($_GET['failure_login']))
 {
 	$_SESSION['failure_login']=1;
-	header("Location:home.php");
+	header("Location:homenew.php");
 }
 
 //If Name In Infra Not mentioned..
@@ -79,7 +79,7 @@ if(isset($_GET['instance_already']))
 if(isset($_GET['error']))
 {
 	$_SESSION['error']=1;
-	header("Location:home.php");
+	header("Location:homenew.php");
 }
 
 
@@ -116,7 +116,7 @@ exit;
 
  * ***************************************************************
  * 
- *           home.php 
+ *           homenew.php 
  *           --------
  * 
  * <?php
